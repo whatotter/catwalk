@@ -61,7 +61,7 @@
 1. install the required packages:  
 
    ```
-   pip install flask requests flask-socketio
+   pip install flask flask-socketio
    ```
 
 2. if you are using this in a real environment, run `genPassword.py` to generate a new password for the web interface:
