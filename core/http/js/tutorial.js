@@ -79,18 +79,17 @@ async function doTutorial() {
         {"charts": ["these are charts that show information of currently connected clients - connection statuses, OUIs (Organizational Unique Identifier, identifies the vendor of a computer), operating systems", "sleep"]},
         {"listen-box": ["this is the listening box; it shows which protocol is listening on which IP and which port", "sleep"]},
         {"victims": ["this is where all connected clients will show up", "evil"]},
-        {"plugins": ["here are where plugins will show up, and where you can read their descriptions and access them", "wall"]},
+        {"plugins": ["here are where plugins will show up, and where you can read their descriptions and access them", "curious"]},
         {"tbox": ["this is the catwalk terminal - here you can manage victims and run a single command to multiple different hosts, etc.\n\ndon't be intimidated, it's real easy to use and either way you don't need to use it", "scared"]},
         
         {"dmo1": [0,0]}, // create fake clients
         
-        {"victims": ["here should be 3 connected clients - they're not real, FYI :)", "surprised"]},
+        {"victims": ["here should be 2 connected clients - they're not real, FYI :)", "surprised"]},
         {"charts": ["here you can see the charts in action - hover over them to see values", "confused"]},
         {"victims": ["press the button 'select' on any client of your choosing, then hit 'OK' here", "ok"]},
         {"victims": ["now hit delete on your keyboard! this should show a notification on the top right - hit delete again", "confused"]},
         {"victims": ["this deletes a client and blacklists them from connecting again with the same ID - don't worry, if you open a reverse shell with that client, they'll still be able to reconnect", "scared"]},
-        {"tbox": ["here's the catwalk terminal - type help for a list of commands (who would've known)", "hurt"]},
-        {"center": ["that concludes the end of the tutorial - thank you for downloading and using catwalk-c2!", "ty"]}
+        {"center": ["that concludes the end of the tutorial - thank you for using catwalk!", "ty"]}
     ]
 
     for (var t=0; tutArray.length>t; t++) {
