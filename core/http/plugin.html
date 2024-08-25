@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+    <script src="core/js/chart.js"></script>
+    <script src="core/js/xterm.min.js"></script>
+    <script type="text/javascript" src="core/js/toastify.js"></script>
+
+    <link rel="stylesheet" href="core/css/xterm.css" />
+    <link href="/core/fontawesome/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="core/css/toastify.min.css">
+    <title>catwalk-c2 | shell</title>
+    <style>
+
+        @font-face {
+            font-family: Roboto;
+            src: url(core/fonts/roboto.ttf);
+        }
+
+        body {
+            background-color: #090909;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1,h2,h3,h4,h5,h6,ul,li,span,text,textarea,a {
+            color: #f0f0f0;
+            font-family: monospace;
+        }
+
+        span {
+            margin: 2px 4px
+        }
+
+        .term-box {
+            width: 85vw;
+            height: 98vh;
+        }
+        .box {
+            border-radius: 0px;
+            background: #101010;
+
+            width: 15vw;
+            height: 46vh;
+            margin: 12px;
+            padding: 2px 12px;
+        }
+
+        .files {
+            overflow: scroll;
+            overflow-x: hidden;
+            height: 85%
+        }
+
+        button {
+            width: 100%;
+            color: white;
+            text-align: left;
+            background-color: rgba(0,0,0,0);
+            border: none;
+            border-radius: 4px;
+            margin-top: 2px
+        } 
+
+            button:hover {
+                background-color: #363636; /* New background color on hover */
+            }
+
+            button:active {
+                transform: translateY(1px);
+            }
+
+        .container4all {
+            width: 90vw;
+            height: 90vh;
+            margin: 3.5vh;
+            display: flex;
+
+            border-radius: 12px;
+            background-color: #101010;
+            padding: 12px 24px;
+        }
+
+        #plugbox {
+            width: 100%;
+            height: 100%;
+        }
+
+        i {
+            margin: 2px 8px 2px 2px;
+            color: white;
+        }
+
+        a {
+            color: #777;
+            font-size: large;
+            text-decoration: none;
+        }
+
+        iframe {
+            width: 100%;
+            height: 90%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container4all">
+
+        <div id="plugbox" class="term-box">
+            
+            <a href="/"><- Return to dashboard</a>
+            <h1 id="name"></h1>
+
+            <iframe id="iframe" src=""></iframe>
+        </div>
+    </div>
+
+    <script>
+
+        function gup( name, url ) {
+            // https://stackoverflow.com/a/979997
+            if (!url) url = location.href;
+            name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+            var regexS = "[\\?&]"+name+"=([^&#]*)";
+            var regex = new RegExp( regexS );
+            var results = regex.exec( url );
+            return results == null ? null : decodeURI(results[1]);
+        }
+
+        document.addEventListener("DOMContentLoaded", function(){
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('GET', '/api/data/plugins', true);
+            xhr.onload = function() {
+                var jsonData = JSON.parse(xhr.responseText)
+
+                if (Object.keys(jsonData).includes("failure")) {
+                    if (jsonData["failure"] == "login") {
+                        window.location = "/login"
+                    }
+                }
+                
+                var key = jsonData[gup("n")]
+
+                document.getElementById("name").innerHTML = gup("n")
+                document.getElementById("iframe").src = "/plugins"+key["endpoint"]
+            };
+
+            xhr.send();
+        })
+    </script>
+
+    <script>
+        String.prototype.formatUnicorn = String.prototype.formatUnicorn ||
+        function () {
+            "use strict";
+            var str = this.toString();
+            if (arguments.length) {
+                var t = typeof arguments[0];
+                var key;
+                var args = ("string" === t || "number" === t) ?
+                    Array.prototype.slice.call(arguments)
+                    : arguments[0];
+
+                for (key in args) {
+                    str = str.replace(new RegExp("\\{" + key + "\\}", "gi"), args[key]);
+                }
+            }
+
+            return str;
+        };
+
+    </script>
+</body>

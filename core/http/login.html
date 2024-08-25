@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<head>
+    <script type="text/javascript" src="core/js/toastify.js"></script>
+    <link rel="stylesheet" type="text/css" href="core/css/toastify.min.css">
+    <title>catwalk-c2 | login</title>
+    <style>
+        @font-face {
+            font-family: Roboto;
+            src: url(core/fonts/roboto.ttf);
+        }
+
+        body {
+            background-color: #0b0b0b;
+        }
+
+        h1,h2,h3,h4,h5,h6,ul,li,span,text,textarea {
+            color: #f0f0f0;
+            font-family: monospace;
+        }
+
+        input[type=text],input[type=password],textarea {
+            background-color: #161616;
+            color: white;
+            border: 0;
+            width: 98%;
+            margin: 8px auto;
+            font-size: 12pt;
+            border-bottom: 2px solid #242424;
+            padding: 4px;
+        }
+
+        .box {
+
+            border-radius: 16px;
+            background: #101010;
+
+            width: 30vw;
+            height: 256px;
+            margin: 16px;
+            padding: 12px;
+            padding-bottom: 36px;
+            justify-content: center;
+            align-items: center;
+
+            box-shadow:  -4px -4px 32px #070707
+        }
+
+        .box-container {
+            display: flex;
+            padding: 4px;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 24vh
+        }
+
+        .login-button {
+            border: none;
+            outline: none;
+
+            border-radius: 4px;
+            background: #101010;
+            color: white;
+            
+            width: 100%;
+            height: 15%;
+
+            transition: background-color 0.1s ease, color 0.1s ease;
+
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+
+            padding: 4px;
+        }
+
+            .login-button:hover {
+                background-color: #363636; /* New background color on hover */
+            }
+
+            .login-button:active {
+                transform: translateY(1px);
+            }
+    </style>
+</head>
+<body>
+    <div class="box-container">
+        <div class="box">
+            <div style="float: left; width: 100%; height: 97.5%">
+                <h2>
+                    login
+                </h2>
+
+                <div style="height: 70%">
+                    <div>
+                        <span style="float:left">Username</span>
+                        <input type="text" id="username">
+                    </div>
+                    <br>
+                    <div>
+                        <span style="float:left">Password</span>
+                        <input type="password" id="password">
+                    </div>
+                </div>
+
+                <button id="login" class="login-button">Login</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function setCookie(name,value,days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days*24*60*60*1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+        }
+
+        function login() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/api/login")
+            xhr.withCredentials = true;
+            xhr.onload = function () {
+                if (xhr.responseText == "failed") {
+                    console.log("failed login")
+                    Toastify({
+                        text: "<span style=\"font-family: roboto\">incorrect username/password</span>",
+                        duration: 2.5 * 1000,
+                        gravity: "top", // `top` or `bottom`
+                        position: "center", // `left`, `center` or `right`
+                        stopOnFocus: true, // Prevents dismissing of toast on hover
+                        style: {
+                            background: "rgb(150,32,32)",
+                            boxShadow: "0 3px 6px -1px rgba(0,0,0,.12),0 10px 36px -4px rgba(254,32,32,.3)",
+                        },
+                        escapeMarkup: false,
+                    }).showToast()
+                } else {
+                    console.log("success")
+
+                    try {
+                        Toastify({
+                            text: "<span style=\"font-family: roboto\">logging in..</span>",
+                            duration: 2.5 * 1000,
+                            gravity: "top", // `top` or `bottom`
+                            position: "center", // `left`, `center` or `right`
+                            stopOnFocus: true, // Prevents dismissing of toast on hover
+                            style: {
+                                background: "rgb(32,150,32)",
+                                boxShadow: "0 3px 6px -1px rgba(0,0,0,.12),0 10px 36px -4px rgba(32,254,32,.3)",
+                            },
+                            escapeMarkup: false,
+                        }).showToast()
+                    } catch {
+                        // pass
+                    }
+
+                    localStorage.setItem("user", document.getElementById("username").value)
+
+                    window.location = "/"
+                }
+            }
+            xhr.send(JSON.stringify({"user": document.getElementById("username").value, "pass": document.getElementById("password").value}))
+        }
+
+        document.addEventListener("keydown", function(event) { if (event.key == "Enter") { login() }});
+        document.getElementById("login").addEventListener("onclick", function() {login()})
+    </script>
+</body>

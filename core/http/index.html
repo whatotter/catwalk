@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<head>
+    <script src="/core/js/chart.js"></script>
+    <script src="/core/js/plugins.js"></script>
+    <script src="/core/js/tutorial.js"></script>
+    <script type="text/javascript" src="core/js/toastify.js"></script>
+    <script src="core/js/xterm.min.js"></script>
+
+    <link href="/core/fontawesome/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="core/css/toastify.min.css">
+    <link rel="stylesheet" href="core/css/xterm.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    <title>catwalk-c2 | 0 clients</title>
+    <style>
+        @font-face {
+            font-family: Roboto;
+            src: url(core/fonts/roboto.ttf);
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow: auto;
+            height: 100%;
+            color-scheme: dark;
+        }
+
+
+        body {
+            background-color: #0b0b0b;
+            overflow: auto;
+            height: 100%;
+            min-height: fit-content;
+            color-scheme: dark;
+        }
+
+        h1,h2,h3,h4,h5,h6,ul,li,span,text,textarea,pre {
+            color: #f0f0f0;
+            font-family: monospace;
+        }
+
+        input,textarea,select {
+            background-color: #161616 !important;
+            border-radius: 4px;
+            color: white;
+            border: 2px solid #242424
+        }
+
+        .dual-buttons {
+            display: flex;
+            flex-direction: row;
+            margin-top: 4px;
+            gap: 4px;
+        }
+
+        .box {
+
+            border-radius: 25px;
+            background: #101010;
+
+            width: 48vh;
+            height: 350px;
+            padding: 12px;
+            padding-bottom: 36px;
+        }
+
+        .box-big {
+
+            display: inline;
+            position: relative;
+
+            border-radius: 25px;
+            background: #101010;
+
+            margin: 16px;
+            padding: 12px;
+            padding-bottom: 36px;
+
+            width: 100%;
+            height: 100vh;
+            scrollbar-width: none;
+        }
+
+        #plugtainer {
+            display: flex;
+        }
+
+        #boxtainer {
+            overflow-y: scroll;
+            height: 92%;
+            scrollbar-width: thin;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+
+            color: black;
+            background-color: #000000a8;
+            z-index: 6;
+            height: 100%;
+            width: 100%;
+
+            transition: ease-in-out 0.1s;
+            backdrop-filter: blur(2px);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-y: auto;
+
+        } .overlay[disabled='true'] {
+            z-index: -1;
+            opacity: 0;
+            pointer-events: none
+        }
+
+        .tiny-box {
+            display: inline-block;
+
+            border-radius: 6px;
+            background: #121212;
+
+            width: 22.5%;
+            margin: 4px;
+            padding: 16px;
+
+        }
+            .tiny-box h2,span {
+                margin: 2px;
+            }
+
+            .tiny-box ul {
+                margin: 8px;
+                padding: 8px;
+            }
+
+            .tiny-box input[type="checkbox"] {
+                float: right;
+            }
+
+            .tiny-box[selected='true'] {
+                background: #161616;
+            }
+
+        .box-container {
+            display: flex;
+            padding: 16px;
+            width: 101%;
+            gap: 24px
+        }
+
+        .charts {
+            display: flex;
+        }
+
+        .chart {
+            width: 16vw;
+            height: 100%;
+            float: left;
+            position: relative;
+            margin: 0.75%;
+        }
+
+        .cool-button {
+            background-color: #161616 !important;
+            color: white;
+            border-radius: 4px;
+            border: 2px solid #242424;
+            font-family: Roboto
+        }
+
+        .tiny-button {
+            border: none;
+            outline: none;
+
+            border-radius: 4px;
+            background: #242424;
+            color: white;
+
+            transition: background-color 0.1s ease, color 0.1s ease;
+
+            font-family: 'Roboto';
+            font-weight: bold;
+
+            padding: 2px 12px 2px
+        }
+
+            .tiny-button:hover {
+                background-color: #363636; /* New background color on hover */
+            }
+
+            .tiny-button:active {
+                transform: translateY(1px);
+            }
+
+        .connect-button {
+            border: none;
+            outline: none;
+
+            border-radius: 4px;
+            background: #101010;
+            color: #f0f0f0;
+            
+            width: 100%;
+            height: 20%;
+
+            transition: background-color 0.1s ease, color 0.1s ease;
+
+            font-family: 'Roboto', sans-serif;
+
+            padding: 10px;
+        }
+
+            .connect-button:hover {
+                background-color: #363636; /* New background color on hover */
+            }
+
+            .connect-button:active {
+                transform: translateY(1px);
+            }
+
+        .message {
+            justify-content: center;
+            align-items: center;
+            margin-top: 7.5%;
+            font-family: Roboto;
+        }
+
+        .pluginbox {
+            min-height: 20vh;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+        } .pluginbox button {
+            margin-top: auto;
+        }
+
+        #listeners {
+            scrollbar-width: thin;
+            height:90%
+        }
+        #listeners h2 {
+            font-size: 12pt;
+            margin: 0;
+        }
+
+        select {
+            color: white;
+            border-radius: 4px;
+            font-family: Roboto
+        } 
+        option {
+            color: white;
+            background-color: #363636 !important;
+            font-family: Roboto
+        }
+
+        hr {
+            border-color: #090909;
+        }
+
+        .mtop {
+            margin-top: 6px;
+        }
+
+        .sidebar {
+            background-color: #090909;
+            height: 100%;
+            width: 3vw;
+
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+
+            top: 0;
+            left: 0;
+        }
+
+        .sidebar-logo {
+            background-color: transparent;
+            border: 0;
+            border-radius: 0;
+            color: #f0f0f0;
+
+            height: 64px;
+            font-size: 16px;
+
+            transition: ease-in-out 0.1s;
+
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            text-decoration: none;
+            
+        }
+
+        .sidebar-button {
+            background-color: transparent;
+            border: 0;
+            border-radius: 0;
+            color: #f0f0f0;
+
+            height: 64px;
+            font-size: 16px;
+
+            transition: ease-in-out 0.1s;
+            cursor: pointer;
+
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            text-decoration: none;
+            
+        } .sidebar-button:hover, .sidebar-button:focus {
+            background-color: #242424;
+            border-right: 4px solid #f0f0f0;
+
+        } .sidebar-button[scrolledto='true'] {
+            border-right: 2px solid #f0f0f0;
+        }
+
+        .main {
+            position:absolute;
+            top:0;
+            left:3vw;
+            width: 93vw
+        }
+
+        .BIG-select {
+            width: 100%;
+            font-size: large;
+            padding: 12px
+        }
+
+        #stage-box {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #stage-click {
+            margin-top: auto;
+        }
+
+        #tut-box {
+            position: fixed;
+            top: 24px;
+            left: 24px;
+            transition: ease-in-out 0.1s;
+            z-index: 11;
+            overflow: hidden;
+        }
+
+        #tut-desc {
+            word-wrap: break-word;
+            font-size: large;
+        }
+
+        #victims {
+            position:relative;
+        }
+
+        #tutorial-overlay {
+            height: 300%;
+            position: absolute;
+            z-index: 6;
+            pointer-events: none
+        }
+    </style>
+</head>
+<body>
+    <div id="stage-overlay" class="overlay" disabled="true">
+        <div id="stage-box" class="tiny-box" style="height: fit-content; min-height: 20%;">
+            <h2>Select stage to run</h2>
+            <br>
+
+            <select class="BIG-select" id="all-stages"></select>
+
+            <pre id="stage-desc"></pre>
+
+            <button id="stage-click" class="connect-button">Run</button>
+        </div>
+    </div>
+
+    <div id="tutorial-overlay" class="overlay" disabled="true">
+        <div id="tut-box" class="tiny-box" style="height: fit-content; width: 15%;">
+
+            <div style="display: flex; gap: 4px; margin-bottom: 12px; align-items: center;">
+                <img id="kitty" height="64" src="/core/kitty/hurt.png">
+                <span id="tut-desc">...</span>
+            </div>
+
+            <button id="tut-click" class="connect-button">OK</button>
+        </div>
+    </div>
+
+
+    <div id="sidebar" class="sidebar">
+        <a class="sidebar-logo" title="Catwalk"><img src="/core/catwalk-1.png" style="filter: invert(1);" height="24" width="24"></a>
+        <a id="top-hl" href="#top" class="sidebar-button" title="Info"><i class="fa-solid fa-chart-simple"></i></a>
+        <a id="victim-hl" href="#victims" class="sidebar-button" title="Victims"><i class="fa-solid fa-list"></i></a>
+        <a id="plug-hl" href="#plugins" class="sidebar-button" title="Plugins"><i class="fa-solid fa-plug"></i></a>
+        <a id="terminal-hl" href="#terminal" class="sidebar-button" title="Control Terminal"><i class="fa-solid fa-terminal"></i></a>
+
+        <h1 style="transform: rotate(-90deg) translateY(4px); margin-top: auto; margin-bottom: 64px;">catwalk</h1>
+    </div>
+
+    <div class="main">
+        <div id="top" class="box-container">
+            <div id="welcome-box" class="box" style="float:left; width: 25%">
+                <h1 id="welcome">welcome</h1>
+                <div style="height: 7.5%">
+                    <span id="msg"></span>
+                </div>
+    
+                <hr style="color: #484848;">
+    
+                <div style="gap: 24px">
+                    <select style="width: 50%" id="payload-dropdown"></select>
+                    <select style="width: 24%" id="shell-dropdown">
+                        <option value="powershell">powershell</option>
+                        <option value="bash">bash</option>
+                        <option value="sh">sh</option>
+                        <option value="/bin/sh">/bin/sh</option>
+                        <option value="/bin/bash">/bin/bash</option>
+                        <option value="cmd">cmd</option>
+                        <option value="zsh">zsh</option>
+                    </select>
+                    <button style="width: 24%" class="cool-button" id="payload-refresh">refresh</button>
+                </div>
+                <br>
+                <textarea id="payloadGen" style="height: 55%; width: 98%"></textarea>
+    
+            </div>
+    
+            <div id="charts" class="box charts" style="float:left; width: 60%">
+                <div class="chart">
+                    <canvas id="piechart1" style="float: left;"></canvas>
+                </div>
+    
+                <div class="chart">
+                    <canvas id="piechart2" style="float: left;"></canvas>
+                </div>
+    
+                <div class="chart">
+                    <canvas id="piechart3" style="float: left;"></canvas>
+                </div>
+            </div>
+    
+            <div id="listen-box" class="box" style="float:right; width: 20%; margin-right: 0;">
+                <div style="float: left; width: 100%; height: 97.5%">
+                    <h2>Listening on:</h2>
+    
+                    <div id="listeners">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="victims" class="box-big" style="float:left;">
+            <div style="float: right; padding: 16px; display: flex; align-items: center;">
+                <span>search by</span>
+                <select style="margin-left: 8px;" id="search-dropdown">
+                    <option value="oui">MAC OUI</option>
+                    <option value="mac">MAC</option>
+                    <option value="ip">IP Address</option>
+                    <option value="hostname">Hostname</option>
+                    <option value="shelltype">Shell Type</option>
+                    <option value="os">Operating System</option>
+                    <option value="arch">Architecture</option>
+                    <option value="active">Activity</option>
+                </select>
+                <input type="text" id="search" placeholder="otter was here" style="margin-left: 8px">
+            </div>
+    
+            <h1 style="padding-left: 8px; margin-bottom: 2px;">victims</h1>
+            <h4 style="padding-left: 8px; margin-top: 2px; margin-bottom: 2px;" id="sl-total">selected: 0</h4>
+            <h4 style="padding-left: 8px; margin-top: 2px;" id="total">total: 0</h4>
+    
+            <div id="boxtainer">
+                <h1 class="message" align="center" id="message">loading..</h1>
+            </div>
+        </div>
+
+        <div id="plugins" class="box-big" style="float:left; height: 75vh;">
+            <h1 style="padding-left: 8px; margin-bottom: 2px;">plugins</h1>
+
+            <br>
+    
+            <div id="plugtainer">
+                <h1 class="message" align="center" id="plug-message">loading..</h1>
+            </div>
+        </div>
+    
+        <div id="tbox" class="box-big" style="float:left; height: 50vh; padding: 10px; overflow: hidden; background-color: #101010; border-radius: 4px;">
+            <div id="terminal" style="height: 110%; padding: 4px"></div>
+        </div>
+        
+    </div>
+
+    <script>
+        var conns = new Chart(document.getElementById('piechart1'), {
+        type: 'pie',
+        data: {
+            labels: ['no data'],
+            datasets: [{
+            data: [1],
+            backgroundColor: [
+            "rgb(180, 180, 180)"
+            ],
+            borderWidth: 1,
+            borderColor: 'transparent'
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+            legend: {
+                position: 'top',
+                display: false,
+                responsive: true
+            },
+            title: {
+                display: true,
+                text: 'status of connections'
+            }
+            }
+        },
+        });
+
+        var ouis = new Chart(document.getElementById('piechart2'), {
+        type: 'pie',
+        data: {
+            labels: ["no data"],
+            datasets: [{
+            data: [1],
+            backgroundColor: ["rgb(180, 180, 180)"],
+            borderWidth: 1,
+            borderColor: 'transparent'
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+            legend: {
+                position: 'top',
+                display: false,
+                responsive: true
+            },
+            title: {
+                display: true,
+                text: 'OUIs'
+            }
+            }
+        },
+        });
+
+        var oses = new Chart(document.getElementById('piechart3'), {
+        type: 'pie',
+        data: {
+            labels: ['no data'],
+            datasets: [{
+            data: [1],
+            backgroundColor: [
+            "rgb(180, 180, 180)"
+            ],
+            borderWidth: 1,
+            borderColor: 'transparent'
+            }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+            legend: {
+                position: 'top',
+                display: false,
+                responsive: true
+            },
+            title: {
+                display: true,
+                text: 'victim operating systems'
+            }
+            }
+        },
+        });
+    </script>
+    <script src="./core/main.js"></script>
+    <script>
+        function isVisible(el) {
+            var rect = el.getBoundingClientRect();
+
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /* or $(window).height() */
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth) /* or $(window).width() */
+            );
+        }
+
+        function updateSidebar(selected){
+            document.getElementById("top-hl").setAttribute("scrolledto", (selected == "top"))
+            document.getElementById("victim-hl").setAttribute("scrolledto", (selected == "victims"))
+            document.getElementById("plug-hl").setAttribute("scrolledto", (selected == 'plugin'))
+            document.getElementById("terminal-hl").setAttribute("scrolledto", (selected == 'terminal'))
+        }
+
+        window.setInterval(function(){
+            if (isVisible(document.getElementById("top"))){
+                updateSidebar("top")
+                return
+            }
+
+            if (isVisible(document.getElementById("boxtainer"))){
+                updateSidebar("victims")
+                return
+            }
+
+            if (isVisible(document.getElementById("plugtainer"))){
+                updateSidebar("plugin")
+                return
+            }
+
+            if (isVisible(document.getElementById("tbox"))){
+                updateSidebar("terminal")
+                return
+            }
+        }, 250)
+    </script>
+</body>

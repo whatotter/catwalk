@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<head>
+    <script src="core/js/chart.js"></script>
+    <script src="core/js/xterm.min.js"></script>
+    <script src="core/js/socket.io.js"></script>
+    <script type="text/javascript" src="core/js/toastify.js"></script>
+
+    <link rel="stylesheet" href="core/css/xterm.css" />
+    <link href="/core/fontawesome/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="core/css/toastify.min.css">
+    <title>catwalk-c2 | shell</title>
+    <style>
+
+        @font-face {
+            font-family: Roboto;
+            src: url(core/fonts/roboto.ttf);
+        }
+
+        body {
+            background-color: #0b0b0b;
+            color-scheme: dark;
+        }
+
+        h1,h2,h3,h4,h5,h6,ul,li,span,text,textarea {
+            color: #f0f0f0;
+            font-family: monospace;
+        }
+
+        span {
+            margin: 2px 4px
+        }
+
+        .term-box {
+            width: 85vw;
+            height: 98vh;
+        }
+        .box {
+            border-radius: 0px;
+            background: #101010;
+
+            width: 15vw;
+            height: 46vh;
+            margin: 12px;
+            padding: 2px 12px;
+        }
+
+        .files {
+            overflow: scroll;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+            height: 85%
+        }
+
+        button {
+            width: 100%;
+            color: white;
+            text-align: left;
+            background-color: #101010;
+            border: none;
+            border-radius: 0px;
+            margin-top: 2px
+        } 
+
+            button:hover {
+                background-color: #363636; /* New background color on hover */
+            }
+
+            button:active {
+                transform: translateY(1px);
+            }
+
+        i {
+            margin: 2px 8px 2px 2px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div style="width: 98vw; height: 80vh; display: flex">
+        <div>
+            <div class="box" style="margin-top: 0; height: 30%">
+                <div style="cursor:pointer" onclick="window.location = '/'">
+                    <i class="fa-solid fa-arrow-left" style="float: left; margin-top: 4px"></i>
+                    <h2>client info</h2>
+                </div>
+
+                <div id="client-info" style="width: 100%">
+                </div>
+            </div>
+            
+            <div class="box" style="height: 85%">
+                <h2>file explorer</h2>
+
+                <hr>
+                <span id="pwd">loading...</span>
+                <hr>
+
+                <div id="files" class="files">
+                    <button>..</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="terminal" class="term-box"></div>
+    </div>
+
+    <script src="/core/js/shell.js"></script>
+</body>

