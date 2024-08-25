@@ -7,6 +7,10 @@
 
 <h4 align="center">CnC that supports dumb/TTY shells, plugins, remote file browsing and downloading, FW/IPS evasion, custom communication protocols, and more</h4>
 
+![Screenshot 2024-08-24 235130](https://github.com/user-attachments/assets/83869850-049f-4d07-87ce-e12091b5b7d9)
+
+<hr>
+
 ## features
 |     name      |description|
 |---------------|-----------|
