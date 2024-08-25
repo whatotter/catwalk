@@ -349,7 +349,7 @@
             top: 24px;
             left: 24px;
             transition: ease-in-out 0.1s;
-            z-index: 11;
+            z-index: 999;
             overflow: hidden;
         }
 
@@ -370,6 +370,18 @@
     </style>
 </head>
 <body>
+    <div id="tutorial-overlay" class="overlay" disabled="true">
+        <div id="tut-box" class="tiny-box" style="height: fit-content; width: 15%;">
+
+            <div style="display: flex; gap: 4px; margin-bottom: 12px; align-items: center;">
+                <img id="kitty" height="64" src="/core/kitty/hurt.png">
+                <span id="tut-desc">...</span>
+            </div>
+
+            <button id="tut-click" class="connect-button">OK</button>
+        </div>
+    </div>
+
     <div id="stage-overlay" class="overlay" disabled="true">
         <div id="stage-box" class="tiny-box" style="height: fit-content; min-height: 20%;">
             <h2>Select stage to run</h2>
@@ -383,17 +395,6 @@
         </div>
     </div>
 
-    <div id="tutorial-overlay" class="overlay" disabled="true">
-        <div id="tut-box" class="tiny-box" style="height: fit-content; width: 15%;">
-
-            <div style="display: flex; gap: 4px; margin-bottom: 12px; align-items: center;">
-                <img id="kitty" height="64" src="/core/kitty/hurt.png">
-                <span id="tut-desc">...</span>
-            </div>
-
-            <button id="tut-click" class="connect-button">OK</button>
-        </div>
-    </div>
 
 
     <div id="sidebar" class="sidebar">
@@ -586,7 +587,7 @@
         },
         });
     </script>
-    <script src="./core/main.js"></script>
+    <script src="./core/js/main.js"></script>
     <script>
         function isVisible(el) {
             var rect = el.getBoundingClientRect();
