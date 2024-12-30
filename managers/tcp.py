@@ -58,17 +58,38 @@ class CatwalkTCP(BaseManager):
         if client == None:
             return "Client key \"{}\" is invalid.".format(uuid)
         
-        recievedData[uuid] = None
+        recievedData[uuid] = []
         mostRecentlyRanCommands.append((command+'\n'))
         client["socket"].sendall((command+'\n').encode('ascii'))
 
         if isAsync:
             return True
-
-        while recievedData[uuid] == None:
-            time.sleep(.01)
         
-        return recievedData[uuid].strip()
+        time.sleep(0.15)
+
+        prevLen = 0
+        frames = 0
+        while True:
+            time.sleep(.01)
+
+            if len(recievedData[uuid]) > prevLen:
+                frames = 0
+                prevLen = len(recievedData[uuid])
+
+            if frames >= 50:
+                if len(recievedData[uuid]) == 0:
+                    frames = 0
+                    continue
+                
+                break
+        
+            frames += 1
+
+        response = recievedData[uuid]
+        recievedData[uuid] = []
+
+        warn("RESPONSE: {}".format(response))
+        return '\n'.join(response)
         
     def listening() -> tuple:
         """Required."""
@@ -166,6 +187,6 @@ class CatwalkTCP(BaseManager):
                 if len(dataline.strip()) == 0:
                     continue
                 
-                print(dataline)
-                recievedData[uuid] = dataline
+                print("DL: {}".format(dataline))
+                recievedData[uuid].append(dataline)
             
